@@ -1,26 +1,176 @@
+/*
+ * globals.css
+ *
+ * Global styles and CSS custom properties for the simulator.
+ *
+ * Design system:
+ *   - Dark luxury aesthetic: deep charcoal/near-black backgrounds
+ *   - Gold accent system: warm amber-gold for interactive elements and highlights
+ *   - Subtle surface layers: slightly lighter darks for cards, panels, modals
+ *   - Sharp, readable typography: high contrast whites on dark backgrounds
+ */
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------------------------------------------------------------------------
+   CSS Custom Properties — Design Tokens
+--------------------------------------------------------------------------- */
+
+:root {
+  /* Background layers */
+  --bg-base: #0a0a0f;
+  --bg-surface: #111118;
+  --bg-card: #16161f;
+  --bg-card-hover: #1c1c28;
+  --bg-modal: #18181f;
+  --bg-input: #0f0f18;
+  --bg-muted: #1a1a24;
+
+  /* Border colors */
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-default: rgba(255, 255, 255, 0.10);
+  --border-emphasis: rgba(255, 255, 255, 0.18);
+  --border-gold: rgba(212, 175, 55, 0.35);
+
+  /* Gold accent palette */
+  --gold-100: #fef9e7;
+  --gold-200: #faefc5;
+  --gold-300: #f5da8a;
+  --gold-400: #e8c03a;
+  --gold-500: #d4af37;
+  --gold-600: #b8962e;
+  --gold-700: #9a7c24;
+  --gold-800: #7a601a;
+  --gold-glow: rgba(212, 175, 55, 0.15);
+
+  /* Text colors */
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.60);
+  --text-muted: rgba(255, 255, 255, 0.35);
+  --text-gold: #d4af37;
+  --text-inverse: #0a0a0f;
+
+  /* Status colors */
+  --status-success: #4ade80;
+  --status-success-bg: rgba(74, 222, 128, 0.10);
+  --status-warning: #fbbf24;
+  --status-warning-bg: rgba(251, 191, 36, 0.10);
+  --status-error: #f87171;
+  --status-error-bg: rgba(248, 113, 113, 0.10);
+  --status-info: #60a5fa;
+  --status-info-bg: rgba(96, 165, 250, 0.10);
+
+  /* Industry color accents — each reference company has a distinct color */
+  --tag-hvac: #3b82f6;
+  --tag-legal: #8b5cf6;
+  --tag-restaurant: #f97316;
+
+  /* Shape */
+  --card-radius: 12px;
+  --modal-radius: 16px;
+  --input-radius: 8px;
+  --badge-radius: 6px;
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.5), 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px var(--border-gold);
+  --shadow-modal: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px var(--border-default);
+  --shadow-gold: 0 0 20px rgba(212,175,55,0.15);
+}
+
+/* ---------------------------------------------------------------------------
+   Base reset & document styles
+--------------------------------------------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Minimal dark scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.20); }
+
+/* ---------------------------------------------------------------------------
+   Utility classes
+--------------------------------------------------------------------------- */
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f5da8a 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-card) 25%,
+    var(--bg-card-hover) 50%,
+    var(--bg-card) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--card-radius);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 300ms ease forwards;
+}
+
+/* Stagger animation delays for card grid */
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 50ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 150ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 250ms; }
+
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-500), transparent);
+  opacity: 0.3;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
 }

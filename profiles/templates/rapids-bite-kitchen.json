@@ -1,0 +1,1453 @@
+{
+  "id": "tpl-rapids-bite-kitchen",
+  "name": "Rapids Bite Kitchen",
+  "industry": "Restaurant / Fast-Casual",
+  "profileType": "template",
+  "industryTemplate": null,
+  "description": "A fast-casual restaurant in Grand Rapids' Wealthy Street corridor, known for globally-inspired grain bowls, wraps, and fresh-pressed juices. Opened in 2019 by couple Ethan and Priya Okafor, survived COVID by pivoting to delivery and takeout. Now doing $1.4M annually across dine-in, takeout, delivery (DoorDash, Uber Eats), and catering. Built a loyal local following but operations are chaotic and margins are thin.",
+  "location": {
+    "city": "Grand Rapids",
+    "state": "Michigan",
+    "zips": [
+      "49503",
+      "49504",
+      "49505",
+      "49506",
+      "49507",
+      "49508",
+      "49509",
+      "49512",
+      "49525",
+      "49534",
+      "49544",
+      "49546"
+    ],
+    "neighborhoods": [
+      "Wealthy Street",
+      "East Hills",
+      "Eastown",
+      "Midtown",
+      "Heritage Hill",
+      "Cherry Hill"
+    ]
+  },
+  "size": {
+    "employeeCount": 22,
+    "annualRevenue": 1400000,
+    "locationCount": 1
+  },
+  "team": [
+    {
+      "name": "Ethan Okafor",
+      "role": "Co-Owner / Executive Chef",
+      "responsibilities": "Menu development, kitchen management, food ordering. Works 60+ hours/week. Does all ingredient ordering from memory and gut instinct.",
+      "isBottleneck": true,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Priya Okafor",
+      "role": "Co-Owner / Front of House",
+      "responsibilities": "Front of house, marketing, social media, catering sales, HR. Also works 60+ hours/week. Managing everything that isn't the kitchen.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "Dante Williams",
+      "role": "Kitchen Manager",
+      "responsibilities": "Runs the kitchen when Ethan isn't there. Manages 6 line cooks. Handles food prep scheduling.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Line Cooks",
+      "role": "Line Cook",
+      "responsibilities": "Mix of full-time and part-time. High turnover \u2014 3 left in the last 6 months.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 6
+    },
+    {
+      "name": "Front of House Staff",
+      "role": "FOH / Counter Service",
+      "responsibilities": "Cashiers, counter service, delivery prep. Also high turnover.",
+      "isBottleneck": false,
+      "techComfort": 3,
+      "count": 4
+    },
+    {
+      "name": "Nadia Hassan",
+      "role": "Catering Coordinator",
+      "responsibilities": "Handles catering inquiries and orders. Part-time. Uses a paper notebook to track everything.",
+      "isBottleneck": true,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "External Bookkeeper",
+      "role": "Bookkeeper (Contractor)",
+      "responsibilities": "Comes in biweekly. Uses QuickBooks. Always behind on reconciliation.",
+      "isBottleneck": false,
+      "techComfort": 3,
+      "count": 1
+    }
+  ],
+  "toolStack": [
+    {
+      "name": "Toast POS",
+      "category": "POS",
+      "usedBy": [
+        "Front of House Staff",
+        "Priya Okafor"
+      ],
+      "usage": "Point of sale and payment processing. Generates sales reports that Priya reviews weekly \u2014 when she remembers.",
+      "painPoints": [
+        "Sales data not connected to inventory or ordering decisions",
+        "Reports reviewed weekly at best \u2014 no real-time visibility",
+        "No automated alerts for slow-moving items or top sellers"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "DoorDash Tablet",
+      "category": "Other",
+      "usedBy": [
+        "Ethan Okafor",
+        "Front of House Staff"
+      ],
+      "usage": "Third-party delivery orders. Separate physical tablet for DoorDash.",
+      "painPoints": [
+        "Separate tablet from Uber Eats \u2014 staff must monitor two screens",
+        "Menu updates must be done manually on each platform separately",
+        "No integration with Toast POS for unified order tracking"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Uber Eats Tablet",
+      "category": "Other",
+      "usedBy": [
+        "Ethan Okafor",
+        "Front of House Staff"
+      ],
+      "usage": "Third-party delivery orders. Separate physical tablet for Uber Eats.",
+      "painPoints": [
+        "Duplicates DoorDash tablet problem \u2014 two separate systems",
+        "Menu 86 updates require manual entry on both platforms",
+        "Payout reconciliation is manual and time-consuming"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Instagram & TikTok",
+      "category": "Marketing",
+      "usedBy": [
+        "Priya Okafor"
+      ],
+      "usage": "Posts 2-3 times/week. Creates content on her phone. No scheduling tool. No analytics tracking.",
+      "painPoints": [
+        "Inconsistent posting \u2014 some weeks 5 posts, some weeks 0",
+        "No content calendar or strategy",
+        "No connection between social media performance and actual revenue",
+        "Catering is barely promoted despite being high-margin"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Google Sheets",
+      "category": "Scheduling",
+      "usedBy": [
+        "Priya Okafor"
+      ],
+      "usage": "Staff schedule built manually every Sunday night. Texts screenshot to team. Shift swaps via group text.",
+      "painPoints": [
+        "Priya spends 3-4 hours every Sunday on scheduling",
+        "No visibility into labor cost vs. revenue by shift",
+        "Shift swaps are chaotic \u2014 no formal approval process",
+        "No-shows happen weekly with no backup system"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Paper Notebook",
+      "category": "Custom/Manual",
+      "usedBy": [
+        "Nadia Hassan"
+      ],
+      "usage": "All catering orders tracked in a physical notebook. No calendar integration or digital backup.",
+      "painPoints": [
+        "Single point of failure \u2014 if notebook is lost, all catering data is gone",
+        "No calendar integration for venue or capacity planning",
+        "No automated reminders or client follow-ups",
+        "Nadia is part-time \u2014 gaps in coverage when she's not in"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "QuickBooks Online",
+      "category": "Accounting",
+      "usedBy": [
+        "External Bookkeeper"
+      ],
+      "usage": "Basic bookkeeping by contractor who comes in biweekly. Always 2-3 weeks behind.",
+      "painPoints": [
+        "Priya doesn't have a clear picture of cash flow at any given moment",
+        "Always 2-3 weeks behind \u2014 financial data is stale",
+        "No automated categorization of transactions",
+        "Food cost analysis requires manual calculation"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Yelp & Google Business",
+      "category": "Marketing",
+      "usedBy": [
+        "Priya Okafor"
+      ],
+      "usage": "Responds to some reviews when Priya remembers to check. No system for generating positive reviews.",
+      "painPoints": [
+        "4.3 stars on Google vs. 4.6 and 4.5 for two competitors within 3 blocks",
+        "Negative reviews about wait times go unanswered for days",
+        "No system for soliciting positive reviews from happy customers"
+      ],
+      "hasAiFeatures": false
+    }
+  ],
+  "workflows": [
+    {
+      "id": "inventory_ordering",
+      "name": "Inventory & Food Ordering",
+      "description": "The process of tracking ingredient levels and placing orders with food suppliers to keep the kitchen stocked.",
+      "currentProcess": "Ethan walks the walk-in cooler and dry storage \u2192 mentally notes what's low \u2192 calls or texts suppliers to place orders \u2192 deliveries arrive at various times \u2192 no systematic tracking of what was ordered vs. received vs. used.",
+      "painPoints": [
+        "Runs out of key ingredients 2-3 times per month, resulting in 86'd menu items",
+        "Food waste estimated at 12-15% (industry target is 4-8%)",
+        "Over-orders on some items, under-orders on others",
+        "No connection between POS sales data and ordering decisions",
+        "All ordering knowledge lives in Ethan's head \u2014 single point of failure"
+      ],
+      "estimatedTimePerWeek": 8,
+      "errorFrequency": "High",
+      "affectedTeamMembers": [
+        "Ethan Okafor",
+        "Dante Williams"
+      ],
+      "aiOpportunity": "AI could analyze POS sales data to predict ingredient needs, automatically generate purchase orders, and alert Ethan when items approach reorder points \u2014 reducing waste and 86'd items dramatically.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "inventory_alert",
+        "daily_sales_summary"
+      ]
+    },
+    {
+      "id": "staff_scheduling",
+      "name": "Staff Scheduling",
+      "description": "Weekly process of building and communicating the staff schedule and managing last-minute changes.",
+      "currentProcess": "Priya builds next week's schedule on Sunday night in Google Sheets \u2192 texts a screenshot to the group chat \u2192 staff request changes via text \u2192 Priya manually updates the sheet \u2192 texts the updated version.",
+      "painPoints": [
+        "Priya spends 3-4 hours every Sunday building the schedule",
+        "No visibility into labor cost vs. revenue by shift",
+        "Shift swaps are chaotic \u2014 handled entirely through group text",
+        "No-shows happen weekly, costing overtime for emergency coverage",
+        "No forecasting of staffing needs based on historical data"
+      ],
+      "estimatedTimePerWeek": 5,
+      "errorFrequency": "Medium",
+      "affectedTeamMembers": [
+        "Priya Okafor",
+        "Line Cooks",
+        "Front of House Staff"
+      ],
+      "aiOpportunity": "AI could analyze historical revenue by day/time to recommend staffing levels, auto-generate a draft schedule, and manage shift swap requests through a simple approval workflow.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "schedule_change_request"
+      ]
+    },
+    {
+      "id": "social_marketing",
+      "name": "Social Media & Marketing",
+      "description": "Creating, scheduling, and publishing social media content to drive foot traffic, delivery orders, and catering inquiries.",
+      "currentProcess": "Priya takes photos on her phone during prep or service \u2192 writes captions herself \u2192 posts directly to Instagram and TikTok when she has time \u2192 no scheduling, no content calendar, no analytics tracking.",
+      "painPoints": [
+        "Inconsistent posting \u2014 some weeks 5 posts, some weeks 0",
+        "No content calendar or strategy \u2014 purely reactive",
+        "No tracking of which posts drive traffic or orders",
+        "Catering is barely marketed despite being a high-margin revenue stream",
+        "Priya is the only person who posts \u2014 single point of failure"
+      ],
+      "estimatedTimePerWeek": 4,
+      "errorFrequency": "Low",
+      "affectedTeamMembers": [
+        "Priya Okafor"
+      ],
+      "aiOpportunity": "AI could generate a content calendar, draft captions based on daily specials and events, suggest optimal posting times based on engagement data, and create catering-specific campaigns.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "catering_inquiry"
+      ]
+    },
+    {
+      "id": "reviews_reputation",
+      "name": "Online Reviews & Reputation",
+      "description": "Monitoring reviews across Google, Yelp, and DoorDash and responding to maintain the restaurant's reputation.",
+      "currentProcess": "Priya checks Google and Yelp when she remembers. Responds to negative reviews (usually days later). No system for soliciting positive reviews from happy customers.",
+      "painPoints": [
+        "4.3 stars on Google while two nearby competitors have 4.5-4.6",
+        "Negative reviews about wait times go unanswered for days",
+        "No proactive review solicitation from happy customers",
+        "DoorDash reviews are rarely monitored",
+        "No tracking of review volume trends"
+      ],
+      "estimatedTimePerWeek": 2,
+      "errorFrequency": "Low",
+      "affectedTeamMembers": [
+        "Priya Okafor"
+      ],
+      "aiOpportunity": "AI could monitor all review platforms, draft personalized responses (empathetic for negative, grateful for positive), route for Priya's approval, and trigger post-visit review requests via receipt or SMS.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "new_review"
+      ]
+    }
+  ],
+  "eventTypes": [
+    {
+      "id": "catering_inquiry",
+      "name": "Catering Inquiry",
+      "icon": "\ud83c\udf7d\ufe0f",
+      "category": "Customer-Facing",
+      "linkedWorkflow": "social_marketing",
+      "fields": [
+        {
+          "key": "contact_name",
+          "label": "Contact Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "dataType": "email",
+          "required": true,
+          "generator": "bizEmail"
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "dataType": "phone",
+          "required": true,
+          "generator": "grPhone"
+        },
+        {
+          "key": "company",
+          "label": "Company / Organization",
+          "dataType": "text",
+          "required": false
+        },
+        {
+          "key": "event_date",
+          "label": "Event Date",
+          "dataType": "date",
+          "required": true,
+          "generator": "dateNear"
+        },
+        {
+          "key": "guest_count",
+          "label": "Guest Count",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 15,
+            "max": 150
+          }
+        },
+        {
+          "key": "event_type",
+          "label": "Event Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Corporate Lunch",
+            "Corporate Dinner",
+            "Wedding",
+            "Private Party",
+            "Team Meeting",
+            "Graduation",
+            "Other"
+          ],
+          "distribution": {
+            "Corporate Lunch": 35,
+            "Corporate Dinner": 15,
+            "Wedding": 10,
+            "Private Party": 15,
+            "Team Meeting": 15,
+            "Graduation": 5,
+            "Other": 5
+          }
+        },
+        {
+          "key": "description",
+          "label": "Event Details",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "cateringInquiries"
+        },
+        {
+          "key": "dietary_restrictions",
+          "label": "Dietary Restrictions",
+          "dataType": "multiselect",
+          "required": false,
+          "options": [
+            "None",
+            "Vegetarian",
+            "Vegan",
+            "Gluten-Free",
+            "Nut Allergy",
+            "Halal",
+            "Kosher"
+          ]
+        },
+        {
+          "key": "budget_per_person",
+          "label": "Budget Per Person",
+          "dataType": "currency",
+          "required": false,
+          "range": {
+            "min": 12,
+            "max": 35
+          }
+        }
+      ],
+      "contentPools": {
+        "cateringInquiries": [
+          "We're planning a company lunch for about 40 people at our office on Monroe Ave. Looking for a grain bowl spread with a few protein options. We try to do this quarterly.",
+          "I'm getting married in September and we want Rapids Bite to cater our rehearsal dinner. Around 55 guests, outdoor venue in Ada. We love your Mediterranean flavors.",
+          "Can you do a corporate lunch for 25 people? We have a team meeting on the 14th. Would need it delivered to the Amway Grand area by noon.",
+          "Our office has about 18 people and we want to try a catering lunch on a Tuesday. Budget is around $14-16 per person. Half of us are vegetarian.",
+          "I'm planning a graduation party for my daughter \u2014 60-70 guests, backyard in East Grand Rapids. Would love a wrap and bowl station setup.",
+          "We're a nonprofit on Cherry St and we have a donor reception coming up. Maybe 35 guests, evening. We want something elevated but not stuffy.",
+          "I'm looking for catering for a 30-person baby shower. Daytime, private event space in Heritage Hill. Several guests are vegan or gluten-free.",
+          "Our law firm (12 people) wants a working lunch catered once a week for the next month as a trial. Wraps and salads ideally. Downtown location.",
+          "Can you cater a birthday dinner party? It's my husband's 50th, 45 people, we're using a venue on Fulton St. He loves Korean and Middle Eastern food.",
+          "I manage a co-working space near Wealthy St and I'm interested in setting up a weekly catering account. 20-30 people on average.",
+          "We need boxed lunches for a training day \u2014 50 people, mix of dietary needs. Need them by 11:30am, we're in Wyoming, MI. Is that too far for delivery?",
+          "Planning a bridal shower, about 20 guests. We love your brand and want a lighter, fresh food experience. Midtown venue.",
+          "I'm the event coordinator at a tech company in Walker. We have 80 people for a product launch event. Need passed bites and a grain bowl station, evening.",
+          "Hi, I'm organizing a community fundraiser at Garfield Park \u2014 about 120 people. We need affordable catering options around $12-14 per person.",
+          "I'd like to inquire about catering for our company holiday party. About 55 people, downtown GR hotel ballroom. December date TBD.",
+          "I'm a caterer myself but I want to sub out the food for a small corporate gig \u2014 30 people, want grain bowls and wraps only, budget about $500 total. Is that feasible?",
+          "Our hospital department (30 people) is doing a staff appreciation lunch. We have strict nut allergy concerns \u2014 is your kitchen nut-free?",
+          "I saw you at the ArtPrize vendor setup last year and I've been meaning to reach out. We want a food drop for a private art opening, 40 guests, Fulton Heights gallery.",
+          "We're doing a retirement party for a longtime teacher \u2014 about 65 guests, evening event, community center in Creston neighborhood.",
+          "I manage HR for a 200-person company on the East Beltline. We want to do a quarterly catering rotation and you came highly recommended. Let's talk volume pricing.",
+          "Planning a gender reveal party \u2014 35 guests, backyard in Alger Heights. We'd love wraps, bowls, and maybe your watermelon juice? Very casual vibe.",
+          "We're a real estate team, 12 people, and we close on a big project next month. Want to do a catered celebration lunch. Probably Eastown or East Hills for delivery.",
+          "I'm the principal at a local middle school. We want to reward our staff \u2014 45 people \u2014 with a catered lunch on an early release day. Healthy food is important to us.",
+          "Is there a minimum order for catering? I just need food for 15 people for a team lunch. We work in a small office on Lake Dr SE.",
+          "I'm having a Diwali celebration for friends and family \u2014 about 50 guests. I love that your food has global flavors. Any chance you could do an Indian-inspired spread?",
+          "Our startup is hosting an investor demo day downtown. 25 attendees. We want food to feel fresh and high-quality \u2014 makes us look good too.",
+          "I need catering for a wake reception after a memorial service. About 80 guests, Celebration of Life format. Something warm and comforting. Diverse family with varied dietary needs.",
+          "We run a fitness studio and want to offer a healthy post-class lunch once a month for our community \u2014 about 30 people. Would love grain bowls.",
+          "Planning a team-building offsite for a 22-person company. We're renting a venue in the country. Need full catering: lunch and afternoon snacks.",
+          "I need boxed lunches for a morning training from 8-noon \u2014 35 people. We'd like them delivered by 7:45am if possible. Is that in your service window?"
+        ]
+      },
+      "webhookKey": "catering_inquiry_webhook",
+      "airtableTarget": {
+        "tableId": "tblCatering",
+        "fieldMapping": {
+          "contact_name": "Contact Name",
+          "email": "Email",
+          "phone": "Phone",
+          "company": "Company",
+          "event_date": "Event Date",
+          "guest_count": "Guest Count",
+          "event_type": "Event Type",
+          "description": "Details",
+          "budget_per_person": "Budget Per Person"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 3
+        },
+        "timeRange": {
+          "earliest": "09:00",
+          "latest": "18:00"
+        },
+        "peakHours": [
+          10,
+          11,
+          14
+        ]
+      },
+      "automationDescription": "AI drafts a personalized catering proposal with menu suggestions based on guest count and budget, calculates pricing, and sends to Nadia for review before responding to the inquiry."
+    },
+    {
+      "id": "inventory_alert",
+      "name": "Inventory Alert (Low Stock)",
+      "icon": "\ud83d\udce6",
+      "category": "Internal Operations",
+      "linkedWorkflow": "inventory_ordering",
+      "fields": [
+        {
+          "key": "ingredient_name",
+          "label": "Ingredient",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "ingredientNames"
+        },
+        {
+          "key": "current_quantity",
+          "label": "Current Quantity",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 1,
+            "max": 20
+          }
+        },
+        {
+          "key": "unit",
+          "label": "Unit",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "lbs",
+            "oz",
+            "cases",
+            "units",
+            "gallons",
+            "liters"
+          ],
+          "distribution": {
+            "lbs": 40,
+            "oz": 15,
+            "cases": 25,
+            "units": 10,
+            "gallons": 5,
+            "liters": 5
+          }
+        },
+        {
+          "key": "reorder_point",
+          "label": "Reorder Point",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 5,
+            "max": 30
+          }
+        },
+        {
+          "key": "avg_daily_usage",
+          "label": "Avg Daily Usage",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 1,
+            "max": 15
+          }
+        },
+        {
+          "key": "supplier_name",
+          "label": "Supplier",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "supplierNames"
+        },
+        {
+          "key": "estimated_stockout_date",
+          "label": "Est. Stockout Date",
+          "dataType": "date",
+          "required": true,
+          "generator": "dateNear"
+        }
+      ],
+      "contentPools": {
+        "ingredientNames": [
+          "Organic romaine lettuce",
+          "Baby spinach",
+          "Shredded red cabbage",
+          "Cherry tomatoes",
+          "Sliced cucumber",
+          "Roasted red pepper",
+          "Pickled red onion",
+          "Shredded carrots",
+          "Fresh avocado",
+          "Corn (roasted, frozen)",
+          "Edamame",
+          "Kale (curly, chopped)",
+          "Arugula",
+          "Diced red bell pepper",
+          "Sliced jalape\u00f1o",
+          "Brown rice (dry)",
+          "Quinoa (white)",
+          "Farro (semi-pearled)",
+          "Bulgur wheat",
+          "Cauliflower rice",
+          "Soba noodles",
+          "Rice noodles",
+          "Pita bread",
+          "Whole wheat flour tortillas (10-inch)",
+          "Spinach tortillas",
+          "Marinated chicken breast",
+          "Pulled chicken thigh (braised)",
+          "Ground turkey",
+          "Grass-fed beef (for grain bowls)",
+          "Shrimp (peeled, deveined, frozen)",
+          "Smoked salmon",
+          "Falafel (house-made mix)",
+          "Crispy tofu (extra-firm)",
+          "Tempeh (marinated)",
+          "Hard-boiled eggs",
+          "Tahini",
+          "Hummus (bulk)",
+          "Sriracha",
+          "Gochujang sauce",
+          "Lemon tahini dressing",
+          "Green goddess dressing",
+          "Cilantro-lime crema",
+          "Tzatziki",
+          "Miso-ginger dressing",
+          "Peanut sauce",
+          "Harissa paste",
+          "Coconut milk (canned)",
+          "Fresh ginger root",
+          "Garlic (whole)",
+          "Lemon (fresh)",
+          "Lime (fresh)",
+          "Cold-pressed apple juice",
+          "Fresh mint",
+          "Cucumber (for juicing)"
+        ],
+        "supplierNames": [
+          "Sysco Grand Rapids",
+          "Gordon Food Service (GFS)",
+          "Local Roots Farm (Coopersville, MI)",
+          "Nature's Fresh Market Produce (Grand Rapids)",
+          "Michigan Turkey Producers Co-op",
+          "Ferris Coffee & Nut Co. (Grand Rapids)",
+          "Townsend Farms (West Michigan produce)",
+          "Nantucket Allserve (specialty dry goods)",
+          "US Foods Great Lakes Division",
+          "GreenLife Organics (West Michigan wholesale)",
+          "Guido's Premium Meats (Grand Rapids)",
+          "West Michigan Beef Co.",
+          "Blue Harvest Fisheries (Great Lakes fresh fish)",
+          "Kalamazoo Spice Company",
+          "Sawall's Natural Foods (GR wholesale)"
+        ]
+      },
+      "webhookKey": "inventory_alert_webhook",
+      "airtableTarget": {
+        "tableId": "tblInventory",
+        "fieldMapping": {
+          "ingredient_name": "Ingredient",
+          "current_quantity": "Current Qty",
+          "unit": "Unit",
+          "reorder_point": "Reorder Point",
+          "supplier_name": "Supplier",
+          "estimated_stockout_date": "Est. Stockout"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 4
+        },
+        "timeRange": {
+          "earliest": "06:00",
+          "latest": "10:00"
+        },
+        "peakHours": [
+          7,
+          8
+        ]
+      },
+      "automationDescription": "AI cross-references POS sales velocity data to confirm the shortage, generates a draft purchase order for Ethan's approval, and checks for multi-ingredient recipes that may also be impacted."
+    },
+    {
+      "id": "new_review",
+      "name": "New Online Review",
+      "icon": "\u2b50",
+      "category": "Marketing",
+      "linkedWorkflow": "reviews_reputation",
+      "fields": [
+        {
+          "key": "platform",
+          "label": "Platform",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Google",
+            "Yelp",
+            "DoorDash",
+            "Uber Eats"
+          ],
+          "distribution": {
+            "Google": 45,
+            "Yelp": 25,
+            "DoorDash": 20,
+            "Uber Eats": 10
+          }
+        },
+        {
+          "key": "reviewer_name",
+          "label": "Reviewer Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "rating",
+          "label": "Rating",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "distribution": {
+            "5": 55,
+            "4": 20,
+            "3": 10,
+            "2": 8,
+            "1": 7
+          }
+        },
+        {
+          "key": "review_text",
+          "label": "Review Text",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "reviewTexts"
+        },
+        {
+          "key": "order_type",
+          "label": "Order Type",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "Dine-In",
+            "Takeout",
+            "Delivery"
+          ],
+          "distribution": {
+            "Dine-In": 40,
+            "Takeout": 30,
+            "Delivery": 30
+          }
+        }
+      ],
+      "contentPools": {
+        "reviewTexts": [
+          "The Korean BBQ Bowl is absolutely incredible. I've been here four times in three weeks. Enough said.",
+          "Best fast-casual spot in GR by a mile. The ingredients are fresh, the portions are generous, and the staff actually cares about what they're making.",
+          "I discovered this place through DoorDash and immediately had to come in person. Everything from scratch, I can tell.",
+          "The Tropical Green Juice alone is worth the trip. Had it three days in a row last week.",
+          "Finally, a healthy restaurant that doesn't taste healthy. I mean that as the highest compliment.",
+          "My whole office orders from here every Friday. We've tried everything on the menu. No miss yet.",
+          "Five stars for the falafel wrap alone. I dream about that tahini.",
+          "Solid grain bowls, super customizable. I can eat here every day without getting bored. Genuinely my favorite place to eat in Grand Rapids.",
+          "I have celiac disease and this is one of the few places where I actually trust the gluten-free option. The staff takes it seriously.",
+          "Came in on my lunch break on a busy Thursday. Was in and out in 11 minutes with a full meal. That's impressive.",
+          "The Moroccan Spiced Bowl hit every flavor note. Warm, earthy, bright. Clearly made by people who know food.",
+          "Priya was behind the counter when I came in and she remembered my usual order from three visits ago. That kind of thing keeps me coming back.",
+          "I've tried most healthy fast-casual places in GR. This is the best. Not close.",
+          "The harissa chicken wrap is unreal. Ordered it on a whim and now I can't stop thinking about it.",
+          "My kids even love it here \u2014 and they hate anything green. Getting them to eat a spinach bowl is a miracle. Thank you.",
+          "I ordered delivery and somehow the bowl was still fresh and beautiful when it arrived. Clearly packaged with care.",
+          "The miso ginger bowl is one of the best things I've eaten in Grand Rapids period. Not just fast-casual \u2014 period.",
+          "Staff is always friendly and they move fast even when the line is long. Good energy in this place.",
+          "One of my favorite things about this place is that I never feel gross after eating here. It's satisfying but light. Love it.",
+          "This spot filled a gap in GR that I didn't even know existed. Global flavors, real ingredients, fast service. What else do you want?",
+          "Gave two stars because the avocado I got was still underripe and mushy. This has happened twice. Please check your produce before putting it on bowls.",
+          "The wait on Saturday afternoon was 20 minutes for a grain bowl. I get that it's popular but I almost left. Speed needs to improve on weekends.",
+          "My DoorDash order was missing a full protein \u2014 I ordered chicken, got no chicken. Had to eat a rice and veggie bowl for $15. Not ideal.",
+          "Three stars. Food is great but the portions have gotten noticeably smaller over the past few months. I used to be full. Now I'm not.",
+          "Ordered via Uber Eats and the dressing was missing. It was a dressing-heavy bowl. Without it the whole thing was dry. Disappointing for the price.",
+          "I've had two bad experiences with undercooked rice. The flavor of everything else is great but please check the rice before it goes out.",
+          "Two stars. Came in 45 minutes before close and was told half the menu was already 86'd. If you close at 8, please be stocked until 8.",
+          "The line was out the door on a Tuesday at noon. That tells you everything you need to know. Worth the wait but you'll wait.",
+          "I don't understand the hype. It was fine. Grain bowls are grain bowls. Nothing I couldn't make at home.",
+          "Great food but the music is always too loud for what is essentially a chill healthy lunch spot. Dialing it back by 30% would improve the vibe.",
+          "I've been vegetarian for 10 years and finding a fast-casual spot this good is genuinely exciting. The tofu options are phenomenal.",
+          "The Cali Avocado Wrap is clean, fresh, and perfectly assembled. It's my go-to every time I need a quick lunch that doesn't feel like a compromise.",
+          "I ordered catering for my office and it was flawless. Setup was easy, food stayed fresh, everyone raved. Will absolutely use them again.",
+          "This place has ruined other fast-casual for me. Everything else just feels like a downgrade now.",
+          "The Korean BBQ Bowl is back on the menu and my whole week just got better. Please never 86 it again.",
+          "Quick, healthy, affordable, local. Four things that rarely go together. This place nails all four.",
+          "I'm a picky eater and I can build a bowl here that I actually love. The customization is a big deal for me.",
+          "One of my employees told me about this place and I drove across town to try it. Now I bring my whole team here for lunch.",
+          "Ordered the ahi tuna bowl \u2014 listed on the menu but they were out. Wish they'd update the digital menu when things run out. Wasted order.",
+          "I asked if the peanut sauce had peanuts (I have a mild allergy) and the counter person went back and checked the actual ingredients for me. That's the right response.",
+          "The smoothie options are underrated. The turmeric ginger blend was just what I needed after a workout.",
+          "Had a birthday celebration here with 8 friends. Staff was super accommodating, moved tables for us. Great community energy.",
+          "I've ordered delivery four times from DoorDash. Three times were perfect. Once was a disaster \u2014 missing items, arrived cold. Inconsistent but mostly great.",
+          "A little pricey for a quick lunch at $16-17 once you add a juice, but the quality justifies it. I just have to remind myself of that each time.",
+          "I love this place but wish they had more parking. Circling the Wealthy Street block three times to find a spot is a deterrent for weekday lunch.",
+          "I drove past this place for a year before trying it. Once I did I immediately regretted waiting so long. Get in here.",
+          "The falafel is clearly made in-house and it shows. Crispy outside, fluffy inside. Way better than anywhere else I've had it in GR.",
+          "As someone who works remotely and eats lunch out often, I've found my spot. Laptop-friendly, consistent wifi, great food.",
+          "Their catering fed my whole team and the feedback was unanimous \u2014 people wanted to know where it came from immediately.",
+          "I'm from Chicago and I'll say this: the grain bowl scene here punches above its weight. Genuinely impressed."
+        ]
+      },
+      "webhookKey": "review_webhook",
+      "airtableTarget": {
+        "tableId": "tblReviews",
+        "fieldMapping": {
+          "platform": "Platform",
+          "reviewer_name": "Reviewer",
+          "rating": "Rating",
+          "review_text": "Review Text",
+          "order_type": "Order Type"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 0,
+          "max": 4
+        },
+        "timeRange": {
+          "earliest": "10:00",
+          "latest": "23:00"
+        },
+        "peakHours": [
+          13,
+          14,
+          20,
+          21
+        ]
+      },
+      "automationDescription": "AI analyzes sentiment, identifies specific complaints (wait time, item quality, service), drafts a personalized response, routes to Priya for one-click approval, and logs the interaction."
+    },
+    {
+      "id": "schedule_change_request",
+      "name": "Staff Schedule Change Request",
+      "icon": "\ud83d\udcc5",
+      "category": "Scheduling",
+      "linkedWorkflow": "staff_scheduling",
+      "fields": [
+        {
+          "key": "employee_name",
+          "label": "Employee Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "role",
+          "label": "Role",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Line Cook",
+            "FOH / Counter",
+            "Kitchen Manager"
+          ],
+          "distribution": {
+            "Line Cook": 55,
+            "FOH / Counter": 35,
+            "Kitchen Manager": 10
+          }
+        },
+        {
+          "key": "original_shift",
+          "label": "Original Shift",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "requested_action",
+          "label": "Request Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Drop Shift",
+            "Swap Shift",
+            "Pick Up Shift",
+            "Call In Sick"
+          ],
+          "distribution": {
+            "Drop Shift": 30,
+            "Swap Shift": 35,
+            "Pick Up Shift": 20,
+            "Call In Sick": 15
+          }
+        },
+        {
+          "key": "reason",
+          "label": "Reason",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "Class conflict",
+            "Family obligation",
+            "Medical / sick",
+            "Car trouble",
+            "Second job conflict",
+            "Personal"
+          ],
+          "distribution": {
+            "Class conflict": 25,
+            "Family obligation": 20,
+            "Medical / sick": 20,
+            "Car trouble": 15,
+            "Second job conflict": 10,
+            "Personal": 10
+          }
+        },
+        {
+          "key": "replacement_suggested",
+          "label": "Replacement Suggested",
+          "dataType": "text",
+          "required": false
+        },
+        {
+          "key": "shift_date",
+          "label": "Shift Date",
+          "dataType": "date",
+          "required": true,
+          "generator": "dateNear"
+        }
+      ],
+      "contentPools": {},
+      "webhookKey": "schedule_change_webhook",
+      "airtableTarget": {
+        "tableId": "tblSchedule",
+        "fieldMapping": {
+          "employee_name": "Employee",
+          "role": "Role",
+          "requested_action": "Request Type",
+          "reason": "Reason",
+          "replacement_suggested": "Suggested Replacement",
+          "shift_date": "Shift Date"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 4
+        },
+        "timeRange": {
+          "earliest": "07:00",
+          "latest": "22:00"
+        },
+        "peakHours": [
+          8,
+          16,
+          20
+        ]
+      },
+      "automationDescription": "AI checks the current schedule for coverage gaps, identifies available staff who can cover, drafts a replacement request message, and notifies Priya with a recommended resolution."
+    },
+    {
+      "id": "daily_sales_summary",
+      "name": "Daily Sales Summary",
+      "icon": "\ud83d\udcca",
+      "category": "Financial",
+      "linkedWorkflow": "inventory_ordering",
+      "fields": [
+        {
+          "key": "date",
+          "label": "Date",
+          "dataType": "date",
+          "required": true
+        },
+        {
+          "key": "total_revenue",
+          "label": "Total Revenue",
+          "dataType": "currency",
+          "required": true,
+          "range": {
+            "min": 2800,
+            "max": 6800
+          }
+        },
+        {
+          "key": "order_count",
+          "label": "Order Count",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 80,
+            "max": 220
+          }
+        },
+        {
+          "key": "avg_ticket",
+          "label": "Average Ticket",
+          "dataType": "currency",
+          "required": true,
+          "range": {
+            "min": 14,
+            "max": 22
+          }
+        },
+        {
+          "key": "labor_cost_pct",
+          "label": "Labor Cost %",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 28,
+            "max": 40
+          }
+        },
+        {
+          "key": "food_cost_pct",
+          "label": "Food Cost %",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 28,
+            "max": 38
+          }
+        },
+        {
+          "key": "top_seller",
+          "label": "Top Seller Today",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "menuItems"
+        },
+        {
+          "key": "dine_in_pct",
+          "label": "Dine-In %",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 30,
+            "max": 50
+          }
+        },
+        {
+          "key": "delivery_pct",
+          "label": "Delivery %",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 25,
+            "max": 40
+          }
+        }
+      ],
+      "contentPools": {
+        "menuItems": [
+          "Korean BBQ Bowl",
+          "Mediterranean Falafel Wrap",
+          "Moroccan Spiced Chicken Bowl",
+          "Cali Avocado Wrap",
+          "Miso Ginger Tofu Bowl",
+          "Harissa Chicken Wrap",
+          "Thai Peanut Noodle Bowl",
+          "Tunisian Lamb Bowl",
+          "Green Goddess Salad",
+          "Smoky Black Bean & Farro Bowl",
+          "Ahi Tuna Poke Bowl",
+          "West African Peanut Stew Bowl",
+          "Spicy Szechuan Beef Bowl",
+          "Roasted Beet & Quinoa Bowl",
+          "Caribbean Jerk Chicken Bowl",
+          "Tropical Green Juice",
+          "Turmeric Ginger Lemonade",
+          "Watermelon Mint Cooler",
+          "Cold-Pressed Citrus Sunrise",
+          "Mango Lassi Smoothie"
+        ]
+      },
+      "webhookKey": "daily_summary_webhook",
+      "airtableTarget": {
+        "tableId": "tblSales",
+        "fieldMapping": {
+          "date": "Date",
+          "total_revenue": "Revenue",
+          "order_count": "Orders",
+          "avg_ticket": "Avg Ticket",
+          "labor_cost_pct": "Labor %",
+          "food_cost_pct": "Food Cost %",
+          "top_seller": "Top Seller"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 1
+        },
+        "timeRange": {
+          "earliest": "21:00",
+          "latest": "22:00"
+        },
+        "peakHours": [
+          21
+        ]
+      },
+      "automationDescription": "AI generates a concise daily digest for Priya and Ethan: revenue vs. target, food cost flag if over 32%, top/bottom performers, and one inventory reorder recommendation based on what sold."
+    }
+  ],
+  "dataSchema": {
+    "tables": [
+      {
+        "name": "Menu Items",
+        "fields": [
+          {
+            "name": "item_id",
+            "type": "Auto Number",
+            "description": "MENU-001, etc."
+          },
+          {
+            "name": "Name",
+            "type": "Single Line Text",
+            "description": "'Korean BBQ Bowl', 'Mediterranean Wrap', 'Tropical Green Juice'"
+          },
+          {
+            "name": "Category",
+            "type": "Single Select",
+            "options": [
+              "Bowls",
+              "Wraps",
+              "Salads",
+              "Juices",
+              "Sides",
+              "Catering"
+            ]
+          },
+          {
+            "name": "Price",
+            "type": "Currency",
+            "description": "$9.50 to $14.95 (entrees); $5.50-$7.50 (juices)"
+          },
+          {
+            "name": "Food Cost",
+            "type": "Currency",
+            "description": "Target 30% of menu price"
+          },
+          {
+            "name": "Active",
+            "type": "Checkbox",
+            "description": "Some seasonal items are inactive"
+          },
+          {
+            "name": "Avg Daily Sales",
+            "type": "Number",
+            "description": "Range 2 to 45 per day"
+          }
+        ]
+      },
+      {
+        "name": "Inventory",
+        "fields": [
+          {
+            "name": "Ingredient",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Category",
+            "type": "Single Select",
+            "options": [
+              "Proteins",
+              "Produce",
+              "Grains",
+              "Dairy",
+              "Sauces",
+              "Beverages",
+              "Packaging"
+            ]
+          },
+          {
+            "name": "Current Qty",
+            "type": "Number"
+          },
+          {
+            "name": "Unit",
+            "type": "Single Select",
+            "options": [
+              "lbs",
+              "oz",
+              "cases",
+              "units",
+              "gallons",
+              "liters"
+            ]
+          },
+          {
+            "name": "Reorder Point",
+            "type": "Number"
+          },
+          {
+            "name": "Par Level",
+            "type": "Number"
+          },
+          {
+            "name": "Supplier",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Last Order Date",
+            "type": "Date"
+          },
+          {
+            "name": "Est. Stockout",
+            "type": "Date"
+          }
+        ]
+      },
+      {
+        "name": "Catering Orders",
+        "fields": [
+          {
+            "name": "Order ID",
+            "type": "Auto Number"
+          },
+          {
+            "name": "Contact Name",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Company",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Email",
+            "type": "Email"
+          },
+          {
+            "name": "Phone",
+            "type": "Phone Number"
+          },
+          {
+            "name": "Event Date",
+            "type": "Date"
+          },
+          {
+            "name": "Guest Count",
+            "type": "Number"
+          },
+          {
+            "name": "Event Type",
+            "type": "Single Select",
+            "options": [
+              "Corporate Lunch",
+              "Corporate Dinner",
+              "Wedding",
+              "Private Party",
+              "Team Meeting",
+              "Graduation",
+              "Other"
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Inquiry",
+              "Proposal Sent",
+              "Confirmed",
+              "Completed",
+              "Cancelled"
+            ]
+          },
+          {
+            "name": "Total Value",
+            "type": "Currency"
+          },
+          {
+            "name": "Deposit Paid",
+            "type": "Checkbox"
+          },
+          {
+            "name": "Notes",
+            "type": "Long Text"
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "fields": [
+          {
+            "name": "Date",
+            "type": "Date"
+          },
+          {
+            "name": "Revenue",
+            "type": "Currency"
+          },
+          {
+            "name": "Orders",
+            "type": "Number"
+          },
+          {
+            "name": "Avg Ticket",
+            "type": "Currency"
+          },
+          {
+            "name": "Labor %",
+            "type": "Number"
+          },
+          {
+            "name": "Food Cost %",
+            "type": "Number"
+          },
+          {
+            "name": "Top Seller",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Dine-In %",
+            "type": "Number"
+          },
+          {
+            "name": "Delivery %",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "name": "Reviews",
+        "fields": [
+          {
+            "name": "Platform",
+            "type": "Single Select",
+            "options": [
+              "Google",
+              "Yelp",
+              "DoorDash",
+              "Uber Eats"
+            ]
+          },
+          {
+            "name": "Reviewer",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Rating",
+            "type": "Number"
+          },
+          {
+            "name": "Review Text",
+            "type": "Long Text"
+          },
+          {
+            "name": "Order Type",
+            "type": "Single Select",
+            "options": [
+              "Dine-In",
+              "Takeout",
+              "Delivery"
+            ]
+          },
+          {
+            "name": "Response Draft",
+            "type": "Long Text"
+          },
+          {
+            "name": "Response Approved",
+            "type": "Checkbox"
+          },
+          {
+            "name": "Date Received",
+            "type": "Date"
+          }
+        ]
+      },
+      {
+        "name": "Schedule",
+        "fields": [
+          {
+            "name": "Employee",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Role",
+            "type": "Single Select",
+            "options": [
+              "Line Cook",
+              "FOH / Counter",
+              "Kitchen Manager"
+            ]
+          },
+          {
+            "name": "Shift Date",
+            "type": "Date"
+          },
+          {
+            "name": "Shift Start",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Shift End",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Scheduled",
+              "Confirmed",
+              "Swapped",
+              "No Show",
+              "Covered"
+            ]
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Catering Orders",
+        "to": "Menu Items",
+        "field": "Menu Items",
+        "type": "many-to-many"
+      }
+    ],
+    "sampleDataSpec": {
+      "Menu Items": 35,
+      "Inventory": 80,
+      "Catering Orders": 20,
+      "Sales": 90,
+      "Reviews": 112,
+      "Schedule": 60
+    }
+  },
+  "integrations": {
+    "airtable": {
+      "baseId": ""
+    },
+    "webhooks": {
+      "catering_inquiry_webhook": "",
+      "inventory_alert_webhook": "",
+      "review_webhook": "",
+      "schedule_change_webhook": "",
+      "daily_summary_webhook": ""
+    },
+    "email": {
+      "fromAddress": null
+    },
+    "claude": {
+      "enabled": false,
+      "model": "claude-sonnet-4-6"
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-04-01T00:00:00.000Z",
+    "updatedAt": "2026-04-01T00:00:00.000Z",
+    "createdBy": "system",
+    "tags": [
+      "restaurant",
+      "food-service",
+      "hospitality",
+      "fast-casual",
+      "reference"
+    ],
+    "notes": "Built-in reference template. Represents a typical 15-25 person fast-casual or independent restaurant. High demo value for hospitality, retail, and any customer-facing business with thin margins.",
+    "isTemplate": true,
+    "lastSimulationDate": null
+  }
+}

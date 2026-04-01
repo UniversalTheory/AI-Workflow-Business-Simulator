@@ -1,0 +1,1471 @@
+{
+  "id": "tpl-westside-mechanical",
+  "name": "Westside Mechanical LLC",
+  "industry": "HVAC & Plumbing",
+  "profileType": "template",
+  "industryTemplate": null,
+  "description": "An 18-person HVAC and plumbing company based on Grand Rapids' west side, serving residential and light commercial customers across Kent and Ottawa counties. Founded in 2011 by Mike Dreyer, a master plumber who grew the company from a one-truck operation. Revenue of approximately $2.8M across installation, repair, and maintenance contracts.",
+  "location": {
+    "city": "Grand Rapids",
+    "state": "Michigan",
+    "zips": [
+      "49503",
+      "49504",
+      "49505",
+      "49506",
+      "49507",
+      "49508",
+      "49509",
+      "49512",
+      "49525",
+      "49534",
+      "49544",
+      "49546"
+    ],
+    "neighborhoods": [
+      "West Side",
+      "East Hills",
+      "Eastown",
+      "Heritage Hill",
+      "Heartside",
+      "Midtown",
+      "Creston",
+      "Alger Heights"
+    ]
+  },
+  "size": {
+    "employeeCount": 18,
+    "annualRevenue": 2800000,
+    "locationCount": 1
+  },
+  "team": [
+    {
+      "name": "Mike Dreyer",
+      "role": "Owner / GM",
+      "responsibilities": "Oversees everything. Still does some estimates himself. Reviews every invoice before it goes out. Bottleneck for most decisions.",
+      "isBottleneck": true,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Sarah Chen",
+      "role": "Office Manager",
+      "responsibilities": "Answers phones, schedules jobs, creates invoices in QuickBooks, manages customer files. Drowning in admin work.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "James Walker",
+      "role": "Lead HVAC Tech",
+      "responsibilities": "Runs a 3-person install crew. Writes handwritten notes on jobs that Sarah has to decipher and enter into the system.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Maria Santos",
+      "role": "Lead Plumber",
+      "responsibilities": "Runs a 3-person plumbing crew. Same handwritten notes problem as James.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Tyler Brooks",
+      "role": "Service Dispatcher",
+      "responsibilities": "Manages the dispatch board (whiteboard in the office). Coordinates daily routes for 4 service vans. Calls and texts all day.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "Field Technicians",
+      "role": "HVAC / Plumbing Tech",
+      "responsibilities": "HVAC and plumbing service calls. Use paper forms for job completion reports. Some text photos to Sarah; some don't.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 6
+    },
+    {
+      "name": "Apprentices",
+      "role": "Apprentice Tech",
+      "responsibilities": "Learning the trades. No admin responsibilities.",
+      "isBottleneck": false,
+      "techComfort": 3,
+      "count": 2
+    },
+    {
+      "name": "Linda Marsh",
+      "role": "Part-time Bookkeeper",
+      "responsibilities": "Comes in Tuesdays and Thursdays. Reconciles QuickBooks, handles payroll, chases overdue invoices.",
+      "isBottleneck": false,
+      "techComfort": 3,
+      "count": 1
+    }
+  ],
+  "toolStack": [
+    {
+      "name": "QuickBooks Desktop",
+      "category": "Accounting",
+      "usedBy": [
+        "Sarah Chen",
+        "Linda Marsh"
+      ],
+      "usage": "Invoicing and basic bookkeeping. Not connected to any other system. Sarah manually creates every invoice from handwritten job notes.",
+      "painPoints": [
+        "Not integrated with scheduling or job tracking",
+        "Sarah manually re-enters all job data to create invoices",
+        "Desktop version requires on-site access \u2014 no remote capability"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Google Calendar",
+      "category": "Scheduling",
+      "usedBy": [
+        "Tyler Brooks"
+      ],
+      "usage": "Schedules service calls. Manually entered. Not reliably shared with field techs.",
+      "painPoints": [
+        "Field techs don't consistently check the calendar",
+        "No two-way sync with dispatch board",
+        "No automated reminders to customers or techs"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Physical Whiteboard",
+      "category": "Custom/Manual",
+      "usedBy": [
+        "Tyler Brooks",
+        "Mike Dreyer"
+      ],
+      "usage": "Daily dispatch board showing which tech goes where. Erased and rewritten every morning.",
+      "painPoints": [
+        "No historical record \u2014 erased daily",
+        "When Tyler is sick, nobody knows the schedule",
+        "Cannot be accessed remotely",
+        "No optimization for routes or tech skills"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Text Messages (iMessage)",
+      "category": "Communication",
+      "usedBy": [
+        "Mike Dreyer",
+        "Sarah Chen",
+        "James Walker",
+        "Maria Santos",
+        "Tyler Brooks",
+        "Field Technicians"
+      ],
+      "usage": "Primary communication channel. Job updates, photos, schedule changes all happen via text.",
+      "painPoints": [
+        "No record-keeping or searchability",
+        "Photos of job sites and forms get buried in chat history",
+        "No accountability or audit trail"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Paper Forms",
+      "category": "Custom/Manual",
+      "usedBy": [
+        "Field Technicians"
+      ],
+      "usage": "Job completion reports, material lists, customer sign-offs. Filled out by hand in the field.",
+      "painPoints": [
+        "Forms get lost or arrive days late",
+        "Handwriting is often illegible",
+        "Sarah must manually transcribe into QuickBooks",
+        "No photos or attachments possible"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Excel Spreadsheets",
+      "category": "Project Management",
+      "usedBy": [
+        "Mike Dreyer"
+      ],
+      "usage": "Tracks estimates and proposals. Version control is nonexistent.",
+      "painPoints": [
+        "Multiple conflicting versions of the same estimate",
+        "No conversion rate tracking",
+        "Some estimates live in email drafts instead of the spreadsheet",
+        "No automated follow-up on open estimates"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Gmail (personal accounts)",
+      "category": "Communication",
+      "usedBy": [
+        "Mike Dreyer",
+        "Sarah Chen"
+      ],
+      "usage": "Business email conducted through personal Gmail accounts. No company email domain.",
+      "painPoints": [
+        "Unprofessional \u2014 customers email mike.dreyer.hvac@gmail.com",
+        "No shared inbox or visibility across the team",
+        "No email templates or automated responses"
+      ],
+      "hasAiFeatures": true
+    },
+    {
+      "name": "Facebook Page",
+      "category": "Marketing",
+      "usedBy": [
+        "Sarah Chen"
+      ],
+      "usage": "Updated sporadically. No consistent posting or review management.",
+      "painPoints": [
+        "No content calendar or scheduling",
+        "Reviews go unresponded for days or weeks",
+        "No connection to any business systems"
+      ],
+      "hasAiFeatures": false
+    }
+  ],
+  "workflows": [
+    {
+      "id": "estimate_creation",
+      "name": "Estimate / Proposal Creation",
+      "description": "The process of receiving a customer request for a quote, visiting the site, creating the estimate document, and getting it to the customer.",
+      "currentProcess": "Customer calls in \u2192 Sarah takes notes on a notepad \u2192 schedules Mike or a lead tech to visit the site \u2192 tech visits and takes measurements/photos on their phone \u2192 texts photos and notes to Mike \u2192 Mike opens his Excel template, manually enters specs, calculates pricing, writes up the proposal \u2192 emails PDF to customer.",
+      "painPoints": [
+        "Mike is the bottleneck \u2014 estimates sit 3-5 days before he gets to them",
+        "Competitors respond faster; they've lost jobs because of slow turnaround",
+        "Excel template has known errors in formulas",
+        "No tracking of which estimates converted to jobs",
+        "No automated follow-up on open estimates after 3-5 days"
+      ],
+      "estimatedTimePerWeek": 20,
+      "errorFrequency": "Medium",
+      "affectedTeamMembers": [
+        "Mike Dreyer",
+        "Sarah Chen",
+        "James Walker",
+        "Maria Santos"
+      ],
+      "aiOpportunity": "AI could pre-classify incoming requests by type and urgency, auto-populate estimate templates with standard pricing, draft the proposal email, and trigger follow-up reminders. Mike's review time drops from hours to minutes per estimate.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "estimate_request",
+        "estimate_followup"
+      ]
+    },
+    {
+      "id": "job_scheduling",
+      "name": "Job Scheduling & Dispatch",
+      "description": "The daily process of assigning technicians to jobs, communicating the schedule, and managing changes throughout the day.",
+      "currentProcess": "Tyler writes tomorrow's schedule on the whiteboard each evening. Texts each tech their schedule at 6 AM. Throughout the day, he handles cancellations, emergency calls, and rescheduling via phone and text. Nothing is recorded.",
+      "painPoints": [
+        "Double-bookings happen at least once a month",
+        "Techs sometimes drive across town when a closer job was available",
+        "When Tyler is sick, nobody knows the schedule",
+        "No data on tech utilization or drive time",
+        "No automated customer notifications for ETAs or changes"
+      ],
+      "estimatedTimePerWeek": 15,
+      "errorFrequency": "Medium",
+      "affectedTeamMembers": [
+        "Tyler Brooks",
+        "Mike Dreyer",
+        "Field Technicians"
+      ],
+      "aiOpportunity": "AI could optimize daily routes based on location and skill set, auto-send customer appointment confirmations and ETA updates, and flag scheduling conflicts before they happen.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "service_request",
+        "schedule_change"
+      ]
+    },
+    {
+      "id": "job_completion_invoicing",
+      "name": "Job Completion & Invoicing",
+      "description": "The process from a technician finishing a job to the customer receiving an invoice.",
+      "currentProcess": "Tech finishes a job \u2192 fills out a paper form \u2192 takes a photo of the form and texts it to Sarah (sometimes) \u2192 Sarah deciphers the handwriting and creates an invoice in QuickBooks \u2192 Mike reviews the invoice \u2192 Sarah emails it to the customer.",
+      "painPoints": [
+        "5-10 business day lag from job completion to invoice sent",
+        "Estimated 3-5% invoice leakage \u2014 some jobs never get invoiced",
+        "Paper forms get lost or are illegible",
+        "Linda spends hours chasing overdue invoices manually",
+        "No mobile invoicing capability for techs in the field"
+      ],
+      "estimatedTimePerWeek": 12,
+      "errorFrequency": "High",
+      "affectedTeamMembers": [
+        "Sarah Chen",
+        "Mike Dreyer",
+        "Linda Marsh",
+        "Field Technicians"
+      ],
+      "aiOpportunity": "AI could extract structured data from tech notes and photos, auto-generate draft invoices for Mike's quick approval, and trigger automated payment reminders on a set schedule.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "job_completion",
+        "overdue_invoice"
+      ]
+    },
+    {
+      "id": "customer_followup",
+      "name": "Customer Follow-Up & Reviews",
+      "description": "Post-job follow-up to ensure satisfaction, request reviews, and identify upsell opportunities for maintenance contracts.",
+      "currentProcess": "Essentially no system exists. Sarah occasionally calls back a customer who seemed unhappy. No automated review requests, no maintenance reminders, no upsell follow-up.",
+      "painPoints": [
+        "Only 47 Google reviews despite hundreds of completed jobs (competitors have 200+)",
+        "4.1 star average \u2014 below the market",
+        "Zero maintenance contract upsell system",
+        "No repeat business strategy",
+        "Unhappy customers leave reviews; happy customers hear nothing"
+      ],
+      "estimatedTimePerWeek": 2,
+      "errorFrequency": "Low",
+      "affectedTeamMembers": [
+        "Sarah Chen",
+        "Mike Dreyer"
+      ],
+      "aiOpportunity": "AI could trigger personalized follow-up texts 24 hours after job completion, include a review request link for satisfied customers, and flag jobs with upsell potential for a maintenance contract pitch.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "review_received",
+        "customer_followup_due"
+      ]
+    }
+  ],
+  "eventTypes": [
+    {
+      "id": "service_request",
+      "name": "New Service Request",
+      "icon": "\ud83d\udd27",
+      "category": "Customer-Facing",
+      "linkedWorkflow": "job_scheduling",
+      "fields": [
+        {
+          "key": "customer_name",
+          "label": "Customer Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "dataType": "phone",
+          "required": true,
+          "generator": "grPhone"
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "dataType": "email",
+          "required": false,
+          "generator": "bizEmail"
+        },
+        {
+          "key": "address",
+          "label": "Service Address",
+          "dataType": "address",
+          "required": true,
+          "generator": "grAddress"
+        },
+        {
+          "key": "service_type",
+          "label": "Service Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "HVAC",
+            "Plumbing",
+            "Both"
+          ],
+          "distribution": {
+            "HVAC": 55,
+            "Plumbing": 35,
+            "Both": 10
+          }
+        },
+        {
+          "key": "urgency",
+          "label": "Urgency",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Low",
+            "Medium",
+            "High",
+            "Emergency"
+          ],
+          "distribution": {
+            "Low": 30,
+            "Medium": 40,
+            "High": 20,
+            "Emergency": 10
+          }
+        },
+        {
+          "key": "problem_description",
+          "label": "Problem Description",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "problemDescriptions"
+        },
+        {
+          "key": "preferred_date",
+          "label": "Preferred Date",
+          "dataType": "date",
+          "required": false,
+          "generator": "dateNear"
+        },
+        {
+          "key": "source",
+          "label": "How Did You Hear About Us?",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "Google Search",
+            "Referral",
+            "Facebook",
+            "Yard Sign",
+            "Repeat Customer",
+            "Angi"
+          ],
+          "distribution": {
+            "Google Search": 35,
+            "Referral": 30,
+            "Facebook": 10,
+            "Yard Sign": 5,
+            "Repeat Customer": 15,
+            "Angi": 5
+          }
+        }
+      ],
+      "contentPools": {
+        "problemDescriptions": [
+          "My furnace just quit \u2014 it's 14 degrees out and I have two little kids in the house. This is urgent.",
+          "The heat stopped working overnight. Woke up to 58 degrees inside. Old Bryant furnace, not sure how old.",
+          "AC is running but it's blowing warm air. House is 78 degrees, thermostat is set to 70.",
+          "I've got a slow drain in my main bathroom \u2014 been getting worse for about three weeks.",
+          "My water heater is making a banging noise when it heats up. Not sure if that's normal or not.",
+          "Toilet in the upstairs hall bath keeps running. Sounds like the flapper might be bad but I don't want to mess with it myself.",
+          "The pressure in my shower has dropped a lot over the past month. Every other faucet seems fine.",
+          "My kitchen faucet has been dripping for probably six months. I finally got tired of it.",
+          "Furnace is cycling on and off every few minutes and never reaching temperature. Setting is 68, house won't get past 62.",
+          "I smell something that might be gas near my furnace. I turned off the gas valve and opened a window. Is this an emergency?",
+          "AC unit outside makes a loud grinding noise when it kicks on. Then it shuts off after a few minutes.",
+          "My basement sump pump is running constantly even though it hasn't rained. Something seems off.",
+          "One bathroom has no hot water but the rest of the house is fine. The other bath and kitchen are normal.",
+          "I think I have a leak behind my bathroom wall \u2014 I can see a water stain spreading on the drywall.",
+          "Garbage disposal stopped working. Reset button doesn't help. I think I might have a wiring issue or it's just dead.",
+          "The pilot light on my water heater keeps going out. I've re-lit it twice this week already.",
+          "My central AC was professionally serviced last spring but it's still not keeping up on hot days. House gets to 80+ when it's 90 outside.",
+          "Hot water runs out after about 8 minutes. We have a 40-gallon tank and it used to last way longer.",
+          "Bathroom sink drain is completely blocked. Drano didn't help. Three people sharing one bathroom.",
+          "I have a gas furnace that's about 18 years old. It just stopped igniting. Heard a click click click sound then nothing.",
+          "My outdoor hose bib is leaking at the handle. I need to replace it before winter.",
+          "The floor drain in my laundry room backs up whenever I run a full load. Never used to do this.",
+          "I have radiant heat and one zone isn't heating. The other zones are fine. Zone valve issue maybe?",
+          "My humidifier attached to the furnace is leaking \u2014 there's water dripping down the side of the furnace.",
+          "Got a clog in the main sewer line I think \u2014 multiple drains backing up at the same time.",
+          "Central air stopped working last night. Thermostat clicks, outdoor unit doesn't start. Indoor blower comes on.",
+          "Water pressure suddenly dropped to almost nothing in the whole house. Happened this morning.",
+          "I need someone to check my furnace before winter \u2014 it hasn't been serviced in at least three years, maybe more.",
+          "My AC keeps freezing up. Ice on the refrigerant lines and the unit stops cooling.",
+          "There's a dripping sound inside the wall in my master bedroom. I don't see any wet spots but I can hear it clearly.",
+          "Water heater is 17 years old and just started leaving a rust-colored tint in the hot water.",
+          "My mini-split is showing an error code \u2014 E6 I think \u2014 and it stopped heating. One of three heads in the house.",
+          "Boiler in my older Heritage Hill home isn't firing. Cast iron radiators are cold. Pilot is lit but no heat.",
+          "I've got a pinhole leak in a copper supply line under my kitchen sink. Small drip but constant.",
+          "AC compressor won't start. Breaker trips about 30 seconds after I reset it.",
+          "My bathroom exhaust fan is venting directly into the attic \u2014 I just realized this. I want it fixed properly.",
+          "Low pressure in just my upstairs bathroom. All three other bathrooms are fine.",
+          "I'm selling my house and the inspector flagged a cracked condensate line on the furnace. Need it fixed ASAP.",
+          "Outdoor AC unit was hit by a falling tree branch. The fins are bent and it won't start. Storm was last night.",
+          "My water heater pilot won't stay lit. I've followed the instructions three times. Eight-year-old Rheem unit.",
+          "The pressure relief valve on my water heater is dripping. Just noticed it, not sure if it's been doing it long.",
+          "Hot and cold are reversed at my bathroom shower \u2014 cold when turned to hot, hot when turned to cold.",
+          "I have a Nest thermostat that stopped communicating with the furnace after a power outage. Screen shows \"Delayed.\"",
+          "My heat pump is stuck in emergency heat mode and won't switch back to normal operation.",
+          "Sewer smell coming from the basement floor drain. Strongest in the morning. Started about a week ago.",
+          "Washing machine drain is overflowing \u2014 water coming out of the standpipe during the spin cycle.",
+          "My outdoor condenser unit has been making a rattling sound all season. Got louder recently.",
+          "I have a leaking shutoff valve under my kitchen sink. Water is dripping slowly but steadily.",
+          "Low refrigerant I think \u2014 AC tech told me that last year but I never got it fixed. Running warm again.",
+          "My garage is heated by a unit heater and it just quit. It's where I store my business inventory."
+        ]
+      },
+      "webhookKey": "service_request_webhook",
+      "airtableTarget": {
+        "tableId": "tblJobs",
+        "fieldMapping": {
+          "customer_name": "Customer Name",
+          "phone": "Phone",
+          "email": "Email",
+          "address": "Address",
+          "service_type": "Service Type",
+          "urgency": "Urgency",
+          "problem_description": "Description",
+          "preferred_date": "Preferred Date",
+          "source": "Source"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 3,
+          "max": 8
+        },
+        "timeRange": {
+          "earliest": "07:00",
+          "latest": "18:00"
+        },
+        "peakHours": [
+          8,
+          9,
+          17
+        ]
+      },
+      "automationDescription": "AI classifies urgency, drafts acknowledgment SMS to customer, creates job record in Airtable, and notifies dispatcher with recommended tech assignment."
+    },
+    {
+      "id": "estimate_request",
+      "name": "New Estimate Request",
+      "icon": "\ud83d\udccb",
+      "category": "Customer-Facing",
+      "linkedWorkflow": "estimate_creation",
+      "fields": [
+        {
+          "key": "customer_name",
+          "label": "Customer Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "dataType": "phone",
+          "required": true,
+          "generator": "grPhone"
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "dataType": "email",
+          "required": true,
+          "generator": "bizEmail"
+        },
+        {
+          "key": "address",
+          "label": "Property Address",
+          "dataType": "address",
+          "required": true,
+          "generator": "grAddress"
+        },
+        {
+          "key": "project_type",
+          "label": "Project Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "New Installation",
+            "Replacement",
+            "Repair",
+            "Maintenance Contract"
+          ],
+          "distribution": {
+            "New Installation": 20,
+            "Replacement": 40,
+            "Repair": 25,
+            "Maintenance Contract": 15
+          }
+        },
+        {
+          "key": "property_type",
+          "label": "Property Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Residential",
+            "Light Commercial"
+          ],
+          "distribution": {
+            "Residential": 75,
+            "Light Commercial": 25
+          }
+        },
+        {
+          "key": "description",
+          "label": "Project Description",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "estimateDescriptions"
+        },
+        {
+          "key": "budget_range",
+          "label": "Budget Range",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "Under $1,000",
+            "$1,000\u2013$5,000",
+            "$5,000\u2013$15,000",
+            "$15,000+",
+            "Not Sure"
+          ],
+          "distribution": {
+            "Under $1,000": 10,
+            "$1,000\u2013$5,000": 35,
+            "$5,000\u2013$15,000": 30,
+            "$15,000+": 10,
+            "Not Sure": 15
+          }
+        }
+      ],
+      "contentPools": {
+        "estimateDescriptions": [
+          "Need a new water heater. Mine is 15 years old and just started making noise. 40-gallon natural gas, nothing fancy.",
+          "Looking to replace my AC and furnace \u2014 both original to the house from 2003. Want to do them together.",
+          "I want to add a second zone to my upstairs. House is about 2,400 sq ft, single-zone forced air right now. Two floors.",
+          "Need a full bathroom plumbing rough-in for a basement bathroom I'm finishing. Just the rough-in, I'll do the tile myself.",
+          "My house doesn't have central air. I want to get a quote for adding it \u2014 1,800 sq ft ranch, existing ductwork for the furnace.",
+          "I want to replace my 50-gallon water heater with a tankless unit. I've been reading about them and I'm interested.",
+          "Need a quote to replace my sump pump and add a backup battery system. My basement flooded once before.",
+          "I'm building a garage and need to run plumbing to a utility sink and a floor drain. About 600 sq ft detached garage.",
+          "Looking for a quote on a whole-house humidifier tied into my furnace. My house gets really dry in winter.",
+          "My older home on the West Side has galvanized pipes. I want a quote to repipe with copper or PEX. About 1,500 sq ft.",
+          "I'm a landlord with a 4-unit on Wealthy St SE. All four units need new furnaces. They're all the same 90k BTU size.",
+          "Need a quote for a high-efficiency furnace replacement. My current unit is 80% AFUE and I've heard I can get 96%+.",
+          "I want to add a mini-split for my garage workshop. Just cooling and maybe heating for winter. 500 sq ft.",
+          "Looking for a quote on a water softener installation. We have well water and the hardness is terrible.",
+          "I want to convert from a natural gas water heater to an electric heat pump water heater. Not sure if it makes sense.",
+          "I need a commercial quote for a small office building \u2014 3,800 sq ft, replace all HVAC equipment, four rooftop units.",
+          "Need to run a new gas line for a generator I'm having installed. Generator is going on the south side of the house.",
+          "I want to replace my toilet and vanity plumbing in the master bath. Upgrade to a higher-end toilet, new supply lines, new angle stops.",
+          "Looking for a quote on a maintenance contract. I have two rental properties and my own home \u2014 all need annual HVAC service.",
+          "I want to install a whole-house water filtration system. City water here but I'd like filtered at the tap.",
+          "Need a quote for outdoor AC replacement. Existing Carrier unit is original to the 2006 build. Looking for a comparable replacement.",
+          "My kitchen remodel calls for moving the sink about 4 feet. Need a plumber to reroute the drain and supply lines.",
+          "I'm adding a master bath in a bedroom addition \u2014 need rough-in plumbing, supply lines, and drain connections to the existing stack.",
+          "Looking for a quote on a gas insert for my fireplace. Need the gas line run and the insert connected.",
+          "I want an EV charger installed in my garage \u2014 need a new 240V circuit run from the panel. Yes I know you're HVAC but I saw you do this.",
+          "I need an outdoor shower installed on my deck. Seasonal use only, hot and cold supply, simple drain.",
+          "My restaurant has an old commercial exhaust hood \u2014 I need it connected properly to an exterior duct. Health inspection coming up.",
+          "I want a quote on replacing all the plumbing fixtures in my rental property \u2014 toilets, faucets, shower heads. Three bathrooms.",
+          "Looking for a quote on HVAC for a new construction home. 2,800 sq ft two-story, builder wants a bid.",
+          "My boiler is 30 years old and still working but I want to get ahead of it before it fails in winter. Quote for replacement.",
+          "I want to add an outdoor spigot on the north side of my house. No hose bib on that side at all.",
+          "Looking to add a whole-house UV air purifier to my existing HVAC system.",
+          "Need a quote on replacing my condensate pump \u2014 it's been failing and I've had water in my utility room twice.",
+          "I want to install PEX manifold-style plumbing to replace my old poly-B supply lines. The house is about 1,200 sq ft.",
+          "Looking for a quote to replace a 30-gallon power vent water heater in a tight utility closet. Access is very limited.",
+          "I have a gym space over my garage and it needs its own mini-split \u2014 no ductwork up there. 700 sq ft.",
+          "I want a quote on replacing my cast iron radiators \u2014 two of them leak and I'm considering converting to baseboard hot water.",
+          "Need a gas line run to a new outdoor grill pad. About 35 feet from the meter.",
+          "Looking for a quote on a heat pump system for my newer construction home. 2,100 sq ft, all electric.",
+          "I need a backflow preventer installed on my lawn irrigation system \u2014 the city is requiring it now."
+        ]
+      },
+      "webhookKey": "estimate_request_webhook",
+      "airtableTarget": {
+        "tableId": "tblEstimates",
+        "fieldMapping": {
+          "customer_name": "Customer Name",
+          "phone": "Phone",
+          "email": "Email",
+          "address": "Property Address",
+          "project_type": "Project Type",
+          "property_type": "Property Type",
+          "description": "Description",
+          "budget_range": "Budget Range"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 2,
+          "max": 5
+        },
+        "timeRange": {
+          "earliest": "08:00",
+          "latest": "17:00"
+        },
+        "peakHours": [
+          9,
+          10,
+          14
+        ]
+      },
+      "automationDescription": "AI pre-populates an estimate template based on project type, drafts a professional response email acknowledging the request, and schedules a site-visit follow-up for the next available tech."
+    },
+    {
+      "id": "job_completion",
+      "name": "Job Completion Report",
+      "icon": "\u2705",
+      "category": "Internal Operations",
+      "linkedWorkflow": "job_completion_invoicing",
+      "fields": [
+        {
+          "key": "job_id",
+          "label": "Job ID",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "tech_name",
+          "label": "Technician",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "James Walker",
+            "Maria Santos",
+            "Tech 1",
+            "Tech 2",
+            "Tech 3",
+            "Tech 4",
+            "Tech 5",
+            "Tech 6"
+          ]
+        },
+        {
+          "key": "hours_worked",
+          "label": "Hours Worked",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 0.5,
+            "max": 8
+          }
+        },
+        {
+          "key": "materials_cost",
+          "label": "Materials Cost",
+          "dataType": "currency",
+          "required": true,
+          "range": {
+            "min": 0,
+            "max": 2500
+          }
+        },
+        {
+          "key": "completion_notes",
+          "label": "Completion Notes",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "completionNotes"
+        },
+        {
+          "key": "customer_satisfaction",
+          "label": "Customer Satisfaction",
+          "dataType": "number",
+          "required": false,
+          "range": {
+            "min": 1,
+            "max": 5
+          }
+        },
+        {
+          "key": "photos_attached",
+          "label": "Photos Attached",
+          "dataType": "boolean",
+          "required": false
+        },
+        {
+          "key": "upsell_opportunity",
+          "label": "Upsell Opportunity Identified",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "None",
+            "Maintenance Contract",
+            "Equipment Upgrade",
+            "Additional Repair",
+            "Water Heater"
+          ],
+          "distribution": {
+            "None": 60,
+            "Maintenance Contract": 20,
+            "Equipment Upgrade": 10,
+            "Additional Repair": 7,
+            "Water Heater": 3
+          }
+        }
+      ],
+      "contentPools": {
+        "completionNotes": [
+          "Replaced blower motor on Carrier furnace. Cleaned evaporator coil \u2014 heavy dust buildup. Filter was completely blocked, sold customer 6-pack filters. Advised on maint plan.",
+          "Found cracked heat exchanger on 2004 Lennox. Red-tagged unit. Customer aware, needs replacement ASAP. Unit is a safety hazard, shut down.",
+          "Replaced flapper and fill valve on master bath toilet. Also adjusted flush handle \u2014 was sticking. 30 min job.",
+          "Cleared main sewer line with 100ft cable snake. Heavy grease/root intrusion at about 40 ft. Advised customer on root treatment.",
+          "Installed new 40-gal Bradford White water heater, natural gas. Removed old unit \u2014 original to house, ~18 yrs. Tested and running, no issues.",
+          "A/C not cooling \u2014 found refrigerant low, added 1.5 lbs R-410A. Leak-checked at Schrader valve \u2014 found small leak. Repaired and re-tested. Advised customer on age of unit (11 yrs).",
+          "Replaced garbage disposal \u2014 Badger 5 with InSinkErator Badger 5XP. Customer supplied unit, labor only. Tested, no leaks.",
+          "Cleaned and inspected furnace for annual service. Replaced igniter (cracked), cleaned flame sensor, checked flue \u2014 clear. Advised maint contract.",
+          "Unclogged kitchen drain \u2014 grease build-up. Snaked 25 ft. Also noticed supply shut-off under sink is corroded, noted for customer \u2014 not an immediate issue but should replace.",
+          "Replaced outdoor hose bib. Threaded supply pipe, used dielectric union. Pressure-tested \u2014 no leaks. Job was straightforward.",
+          "Found failed capacitor on outdoor A/C condenser. Replaced dual-run capacitor, unit started normally. Tested temp split \u2014 18\u00b0F at supply, normal. System is 9 years old overall.",
+          "Installed whole-house humidifier on furnace (Aprilaire 600). Ran 1/4\" supply saddle valve and drain line. Programmed humidistat. Customer very happy.",
+          "Replaced pressure-reducing valve on main supply line. Old PRV was set to 95 psi \u2014 way too high. New one set to 60 psi. Explained to customer what the PRV does.",
+          "Repaired pinhole copper leak under kitchen sink. Cut out 8\" section, sweated in new copper \u2014 clean job. Tested pressure, dry.",
+          "Replaced thermostat \u2014 Honeywell T6 Pro. Customer wanted to keep it simple, no wifi. Programmed 5+2 day schedule. All zones responding correctly.",
+          "A/C unit frozen \u2014 found evaporator coil severely iced. Defrosted, found return air filter completely blocked. Replaced filter, cleaned coil. Temp split normal after restart.",
+          "Diagnosed no heat call \u2014 found draft inducer motor failed on 2011 Goodman. Sourced part, returned next day for install. Heat restored, tested through 3 cycles.",
+          "Replaced wax ring and flange repair kit on first-floor toilet. Toilet was rocking \u2014 flange was cracked. Minor subfloor softness noted, advised customer to monitor.",
+          "Installed new Navien NPE-240S tankless water heater. Ran 3/4\" gas line, installed dedicated cold supply and hot out, installed pressure relief. Hot water flow rate tested. Customer pleased.",
+          "Found bird nest in flue pipe of water heater \u2014 carbon monoxide risk. Cleared nest, installed proper flue cap. Customer was not aware.",
+          "Diagnosed no-cool call on heat pump. Reversing valve stuck in heat mode. Replaced reversing valve solenoid coil \u2014 unit cycling normally now. Extensive job, 4.5 hrs.",
+          "Replaced both shut-off valves under kitchen sink \u2014 angle stops corroded beyond repair. Easy access, 1 hr job. Also replaced flex supply lines while in there.",
+          "Annual boiler service on 2008 Burnham cast iron. Flushed and bled radiators \u2014 air-locked in two zones. System now heating evenly. Recommended expansion tank replacement soon.",
+          "Found cracked condensate drain pan on A/C air handler. Replaced pan, cleaned evaporator, cleared condensate drain. Drain was partially blocked with algae.",
+          "Installed battery backup sump pump \u2014 Liberty SJ10 alongside existing pump. Tested primary and backup. Advised customer on annual battery check.",
+          "Replaced kitchen faucet \u2014 Delta two-handle with new Moen Adler single-handle. Customer supplied fixture. Supply lines and angle stops replaced too.",
+          "Cleared floor drain in basement \u2014 packed with debris, roots present. Snaked 50 ft, flushed line. Noted that main clean-out access is buried under concrete, customer aware.",
+          "Low refrigerant on 2015 Lennox A/C. Found leak at the Schrader valve, replaced valve core, re-charged 2 lbs R-410A. Leak check clean. Performance restored.",
+          "Replaced igniter on Bradford White water heater. Old igniter cracked \u2014 failed on visual. Took 45 min including parts retrieval from truck. Pilot and burner both confirmed operational.",
+          "Rerouted kitchen drain line for remodel \u2014 moved 3.5 ft to accommodate new island. Glued ABS, proper slope confirmed. No leaks at pressure test.",
+          "Replaced zone valve on second-floor heat zone \u2014 Honeywell zone valve motor seized. Two hours including bleeding the zone after repair. All zones verified working.",
+          "Installed gas line for outdoor fire pit \u2014 20 ft from meter to fire pit location, 1/2\" black pipe, proper sediment leg and shutoff. Pressure tested and approved.",
+          "Diagnosed short cycling on furnace \u2014 limit switch tripping. Found oversized filter restricting airflow. Replaced with correct-size filter, adjusted blower speed. No parts needed.",
+          "Replaced shower valve cartridge on master bath Moen \u2014 stem seal worn, hot water bleeding through to cold. New cartridge, tested temp balance, good.",
+          "Found failed control board on Carrier furnace. Sourced OEM board, installed next morning. Furnace running normally through full heat cycle. Customer relief \u2014 it's January.",
+          "Cleaned A/C condenser coils \u2014 heavily fouled with cottonwood. Washed coils, checked capacitor (within spec), topped off refrigerant 0.5 lb. Efficiency noticeably improved.",
+          "Replaced main water shut-off valve \u2014 old gate valve corroded, handle broke off. Installed new ball valve with proper bonding jumper for grounding. Water back on, no leaks.",
+          "Installed smart thermostat (Ecobee SmartThermostat Premium) \u2014 customer supplied. Set up wifi, created schedule, showed customer the app. Tested heat and cool modes.",
+          "Repaired slab leak \u2014 found active leak in hot supply line under basement slab. Isolated line, tunneled 3 ft, repaired with SharkBite coupling. Concrete patch not in scope, customer arranging separately.",
+          "Replaced corroded shower arm and head \u2014 customer-supplied Moen fixture. Teflon tape, snug connection, tested for leaks. No issues. Quick 30-min service call."
+        ]
+      },
+      "webhookKey": "job_completion_webhook",
+      "airtableTarget": {
+        "tableId": "tblJobs",
+        "fieldMapping": {
+          "tech_name": "Assigned Tech",
+          "hours_worked": "Actual Hours",
+          "materials_cost": "Materials Cost",
+          "completion_notes": "Completion Notes",
+          "customer_satisfaction": "Satisfaction Rating",
+          "photos_attached": "Photos Attached",
+          "upsell_opportunity": "Upsell Opportunity"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 4,
+          "max": 10
+        },
+        "timeRange": {
+          "earliest": "09:00",
+          "latest": "17:30"
+        },
+        "peakHours": [
+          12,
+          13,
+          15,
+          16
+        ]
+      },
+      "automationDescription": "AI extracts structured data from tech notes, generates a draft invoice for owner review, identifies upsell opportunities, and queues a customer satisfaction follow-up for 24 hours later."
+    },
+    {
+      "id": "overdue_invoice",
+      "name": "Overdue Invoice Alert",
+      "icon": "\ud83d\udcb0",
+      "category": "Financial",
+      "linkedWorkflow": "job_completion_invoicing",
+      "fields": [
+        {
+          "key": "invoice_number",
+          "label": "Invoice #",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "customer_name",
+          "label": "Customer Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "amount",
+          "label": "Amount Due",
+          "dataType": "currency",
+          "required": true,
+          "range": {
+            "min": 150,
+            "max": 8500
+          }
+        },
+        {
+          "key": "days_overdue",
+          "label": "Days Overdue",
+          "dataType": "number",
+          "required": true,
+          "options": [
+            "30-45",
+            "45-60",
+            "60+"
+          ],
+          "distribution": {
+            "30-45": 60,
+            "45-60": 25,
+            "60+": 15
+          },
+          "range": {
+            "min": 30,
+            "max": 90
+          }
+        },
+        {
+          "key": "phone",
+          "label": "Customer Phone",
+          "dataType": "phone",
+          "required": true,
+          "generator": "grPhone"
+        },
+        {
+          "key": "email",
+          "label": "Customer Email",
+          "dataType": "email",
+          "required": true,
+          "generator": "bizEmail"
+        },
+        {
+          "key": "previous_reminder_count",
+          "label": "Previous Reminders Sent",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 0,
+            "max": 3
+          }
+        }
+      ],
+      "contentPools": {},
+      "webhookKey": "overdue_invoice_webhook",
+      "airtableTarget": {
+        "tableId": "tblInvoices",
+        "fieldMapping": {
+          "invoice_number": "Invoice Number",
+          "customer_name": "Customer Name",
+          "amount": "Amount Due",
+          "days_overdue": "Days Overdue",
+          "previous_reminder_count": "Reminders Sent"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 4
+        },
+        "timeRange": {
+          "earliest": "09:00",
+          "latest": "16:00"
+        },
+        "peakHours": [
+          10,
+          14
+        ]
+      },
+      "automationDescription": "AI drafts a professionally-worded, escalating collection email tailored to the days-overdue amount, then logs the outreach attempt in Airtable."
+    },
+    {
+      "id": "review_received",
+      "name": "Google Review Received",
+      "icon": "\u2b50",
+      "category": "Marketing",
+      "linkedWorkflow": "customer_followup",
+      "fields": [
+        {
+          "key": "reviewer_name",
+          "label": "Reviewer Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "star_rating",
+          "label": "Star Rating",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 1,
+            "max": 5
+          },
+          "distribution": {
+            "5": 60,
+            "4": 15,
+            "3": 10,
+            "2": 10,
+            "1": 5
+          }
+        },
+        {
+          "key": "review_text",
+          "label": "Review Text",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "reviewTexts"
+        },
+        {
+          "key": "service_date",
+          "label": "Service Date",
+          "dataType": "date",
+          "required": false,
+          "generator": "dateNear"
+        },
+        {
+          "key": "tech_name_mentioned",
+          "label": "Tech Mentioned",
+          "dataType": "text",
+          "required": false
+        }
+      ],
+      "contentPools": {
+        "reviewTexts": [
+          "James came out the same day I called. My furnace went out in February and he had it running within two hours. Can't say enough good things about Westside Mechanical.",
+          "Couldn't be happier. The tech \u2014 I think his name was Tyler \u2014 was clean, professional, and explained everything. Fair price too.",
+          "Sarah in the office was so patient with me when I was panicking about my burst pipe. She got someone out fast and kept me calm.",
+          "Had them replace my water heater and furnace in the same visit. Big job, went smoothly. They cleaned up after themselves which I really appreciated.",
+          "Great local company. Mike personally came out to give me an estimate and was honest about what I needed vs. what I didn't. That matters.",
+          "Five stars. Tech found a cracked heat exchanger I didn't know about. Said it was a carbon monoxide risk. Fixed it before it became a real problem. I'm grateful.",
+          "Used them twice now \u2014 once for AC and once for a drain clog. Both times on time, professional, reasonably priced. They're on my speed dial.",
+          "Honest, local, and skilled. I've used bigger companies before and always felt like I was being upsold. Westside never does that.",
+          "My technician (Maria) found a problem that two other companies missed. Her diagnosis was right and the fix worked. Excellent work.",
+          "They squeezed us in when our heat went out before Thanksgiving. Family was coming and we were panicking. Lifesavers.",
+          "Super friendly and knowledgeable. Tech walked me through exactly what was wrong and what the fix would cost before starting. No surprises on the invoice.",
+          "Called about a leaking pipe at 7am. Someone picked up immediately and a tech was here by 9. That's how it should work.",
+          "I've been using Westside Mechanical for 6 years. Consistent quality every single time. Their maintenance plan has paid for itself.",
+          "Excellent job replacing my sump pump. Showed up on time, finished in under two hours, tested everything. Great crew.",
+          "Very fair pricing compared to two other quotes I got. Did a full AC replacement and install \u2014 professional the whole way through.",
+          "Only two stars because they were four hours late and nobody called to let me know. The work itself was fine but the scheduling communication needs serious improvement.",
+          "The technician was great but I'm frustrated it took a week and a half to get an appointment for a non-emergency. Other companies got me in in two days.",
+          "I felt the price was higher than I expected. I got a quote for $380 just to clear a drain. Did it myself for $8 worth of supplies.",
+          "The tech who came out was polite and clearly knew what he was doing. But the invoice I received had labor charged at a different rate than what I was quoted. Sarah fixed it but it was annoying.",
+          "Disappointed. Had a 9am window, tech didn't arrive until after noon. When I called to check in, they didn't seem to know where he was.",
+          "Mike came out personally to assess my old boiler and gave me an honest, thorough rundown of my options. Did not pressure me to buy new. I respect that.",
+          "My furnace installation was seamless. James and his crew were in and out in one day, left no mess, and the system has worked perfectly since.",
+          "Called in for AC repair in June. Appointment was 4 days out but they called me the next morning because of a cancellation. Appreciated the effort.",
+          "Good work on the bathroom plumbing rough-in. They ran everything cleanly through the wall and the inspector passed it first time.",
+          "Had a slab leak and honestly feared the worst. The crew was professional and minimized the damage. Repair is holding strong six months later.",
+          "Annual furnace tune-up done quickly and by someone who clearly knew what he was looking at. Did not try to sell me anything I didn't need.",
+          "Best plumber I've used in Grand Rapids. Maria was on time, professional, and got the job done without drama. Will request her specifically next time.",
+          "I manage several rental properties and use Westside for all HVAC and plumbing. Consistent, reliable, fair. That's rare in the trades.",
+          "Replaced my water heater and they noticed the pressure relief valve on the new unit was mounted wrong. Caught it themselves and corrected it. Attentive work.",
+          "The negative: They're hard to reach by phone during busy times. The positive: When you do get through, the service is excellent. Worth the persistence.",
+          "Three stars. The work was done correctly but the tech left a significant mess in my utility room and didn't offer to clean it up. I had to ask.",
+          "Gave them a try based on a neighbor's recommendation. Will definitely use them again. Tech was knowledgeable, quick, and friendly.",
+          "I asked a lot of questions about my new furnace and the installer was patient and thorough in his explanations. Rare and appreciated.",
+          "My AC died in the middle of a heat wave. They fit me in within 24 hours. Diagnosed and repaired in one visit. Outstanding.",
+          "Got three quotes for a new AC unit. Westside was the middle price but the most thorough in their explanation. Went with them and have no regrets.",
+          "The tech showed up in a clean uniform, put on shoe covers before entering, and explained the invoice before I signed it. Small things that add up to a great experience.",
+          "One star. Got a quote of $1,200, final invoice was $1,580. Nobody called to let me know the price was going up. I had to argue to understand the charges.",
+          "I had an odd vibration in my ductwork for two years. Two other companies ignored it. Westside tech found a loose duct boot in the attic and fixed it in 20 minutes.",
+          "Fast, knowledgeable, reasonably priced. I'll only use Westside Mechanical going forward. Highly recommend to all my neighbors on the West Side.",
+          "They serviced my elderly parents' home when I couldn't be there. Called me to explain what they found and what they did. That level of communication is everything.",
+          "Great company. The only reason I'm not giving five stars is that they don't offer online booking. I'd love to be able to schedule without calling.",
+          "Quick response, quality work, honest people. The tech explained that I didn't need the part I thought I needed and saved me $400.",
+          "Two stars. I called about a water heater replacement and never received the estimate that was promised within two business days. I ended up going with someone else.",
+          "James and his apprentice did a full furnace and AC replacement in our Heritage Hill home. Old house, tricky install, done right. Excellent experience.",
+          "Had a leaking pipe under my slab repaired and it was a major job. Westside handled it professionally. Fair price for a difficult repair.",
+          "I'm a first-time homeowner and the tech took time to show me where all my shut-offs are and explain how my system works. That meant a lot.",
+          "They replaced a corroded main shut-off valve that two other plumbers said they couldn't do without major disruption. Westside did it in three hours.",
+          "Sarah handles scheduling with a great attitude even when she's clearly overwhelmed. She is the glue that holds this operation together.",
+          "My experience was five stars until billing \u2014 it took three weeks to receive an invoice after the job. Please fix your invoicing process.",
+          "Excellent annual maintenance program. They remind me when I'm due, show up on time, and never leave without explaining what they found."
+        ]
+      },
+      "webhookKey": "review_webhook",
+      "airtableTarget": {
+        "tableId": "tblReviews",
+        "fieldMapping": {
+          "reviewer_name": "Reviewer",
+          "star_rating": "Rating",
+          "review_text": "Review Text",
+          "service_date": "Service Date",
+          "tech_name_mentioned": "Tech Mentioned"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 0,
+          "max": 3
+        },
+        "timeRange": {
+          "earliest": "06:00",
+          "latest": "23:00"
+        },
+        "peakHours": [
+          9,
+          13,
+          20
+        ]
+      },
+      "automationDescription": "AI analyzes sentiment, drafts a personalized owner response (empathetic for negative, grateful for positive), and routes to Mike for one-click approval before posting."
+    }
+  ],
+  "dataSchema": {
+    "tables": [
+      {
+        "name": "Customers",
+        "fields": [
+          {
+            "name": "customer_id",
+            "type": "Auto Number",
+            "description": "WM-001, WM-002, etc."
+          },
+          {
+            "name": "Name",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Type",
+            "type": "Single Select",
+            "options": [
+              "Residential",
+              "Commercial"
+            ]
+          },
+          {
+            "name": "Address",
+            "type": "Single Line Text",
+            "description": "Use GR zip codes: 49503\u201349546"
+          },
+          {
+            "name": "Phone",
+            "type": "Phone Number",
+            "description": "616-XXX-XXXX format"
+          },
+          {
+            "name": "Email",
+            "type": "Email"
+          },
+          {
+            "name": "Source",
+            "type": "Single Select",
+            "options": [
+              "Google Search",
+              "Referral",
+              "Facebook",
+              "Yard Sign",
+              "Repeat Customer",
+              "Angi"
+            ]
+          },
+          {
+            "name": "Lifetime Value",
+            "type": "Currency",
+            "description": "$150 to $28,000"
+          },
+          {
+            "name": "Last Service Date",
+            "type": "Date"
+          },
+          {
+            "name": "Notes",
+            "type": "Long Text",
+            "description": "e.g. 'Has two large dogs, call before arriving'"
+          }
+        ]
+      },
+      {
+        "name": "Jobs",
+        "fields": [
+          {
+            "name": "job_id",
+            "type": "Auto Number",
+            "description": "JOB-2026-001, etc."
+          },
+          {
+            "name": "Customer",
+            "type": "Link to Customers"
+          },
+          {
+            "name": "Type",
+            "type": "Single Select",
+            "options": [
+              "HVAC Install",
+              "HVAC Repair",
+              "Plumbing Install",
+              "Plumbing Repair",
+              "Maintenance",
+              "Emergency"
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Lead",
+              "Estimate Sent",
+              "Scheduled",
+              "In Progress",
+              "Completed",
+              "Invoiced",
+              "Paid",
+              "Cancelled"
+            ]
+          },
+          {
+            "name": "Assigned Tech",
+            "type": "Single Select"
+          },
+          {
+            "name": "Scheduled Date",
+            "type": "Date"
+          },
+          {
+            "name": "Estimated Hours",
+            "type": "Number"
+          },
+          {
+            "name": "Actual Hours",
+            "type": "Number"
+          },
+          {
+            "name": "Materials Cost",
+            "type": "Currency"
+          },
+          {
+            "name": "Labor Cost",
+            "type": "Currency"
+          },
+          {
+            "name": "Total Price",
+            "type": "Currency"
+          },
+          {
+            "name": "Description",
+            "type": "Long Text"
+          },
+          {
+            "name": "Completion Notes",
+            "type": "Long Text"
+          },
+          {
+            "name": "Invoice Number",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Invoice Sent Date",
+            "type": "Date"
+          },
+          {
+            "name": "Paid Date",
+            "type": "Date"
+          }
+        ]
+      },
+      {
+        "name": "Estimates",
+        "fields": [
+          {
+            "name": "estimate_id",
+            "type": "Auto Number"
+          },
+          {
+            "name": "Customer",
+            "type": "Link to Customers"
+          },
+          {
+            "name": "Project Type",
+            "type": "Single Select",
+            "options": [
+              "New Installation",
+              "Replacement",
+              "Repair",
+              "Maintenance Contract"
+            ]
+          },
+          {
+            "name": "Property Type",
+            "type": "Single Select",
+            "options": [
+              "Residential",
+              "Light Commercial"
+            ]
+          },
+          {
+            "name": "Description",
+            "type": "Long Text"
+          },
+          {
+            "name": "Estimated Amount",
+            "type": "Currency"
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Draft",
+              "Sent",
+              "Accepted",
+              "Declined",
+              "Expired"
+            ]
+          },
+          {
+            "name": "Sent Date",
+            "type": "Date"
+          },
+          {
+            "name": "Follow Up Date",
+            "type": "Date"
+          }
+        ]
+      },
+      {
+        "name": "Invoices",
+        "fields": [
+          {
+            "name": "Invoice Number",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Job",
+            "type": "Link to Jobs"
+          },
+          {
+            "name": "Customer",
+            "type": "Link to Customers"
+          },
+          {
+            "name": "Amount",
+            "type": "Currency"
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Draft",
+              "Sent",
+              "Overdue",
+              "Paid"
+            ]
+          },
+          {
+            "name": "Invoice Date",
+            "type": "Date"
+          },
+          {
+            "name": "Due Date",
+            "type": "Date"
+          },
+          {
+            "name": "Paid Date",
+            "type": "Date"
+          },
+          {
+            "name": "Reminders Sent",
+            "type": "Number"
+          }
+        ]
+      },
+      {
+        "name": "Reviews",
+        "fields": [
+          {
+            "name": "Reviewer",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Rating",
+            "type": "Number"
+          },
+          {
+            "name": "Review Text",
+            "type": "Long Text"
+          },
+          {
+            "name": "Service Date",
+            "type": "Date"
+          },
+          {
+            "name": "Tech Mentioned",
+            "type": "Single Line Text"
+          },
+          {
+            "name": "Response Draft",
+            "type": "Long Text"
+          },
+          {
+            "name": "Response Approved",
+            "type": "Checkbox"
+          },
+          {
+            "name": "Response Posted Date",
+            "type": "Date"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Jobs",
+        "to": "Customers",
+        "field": "Customer",
+        "type": "many-to-one"
+      },
+      {
+        "from": "Estimates",
+        "to": "Customers",
+        "field": "Customer",
+        "type": "many-to-one"
+      },
+      {
+        "from": "Invoices",
+        "to": "Jobs",
+        "field": "Job",
+        "type": "many-to-one"
+      },
+      {
+        "from": "Invoices",
+        "to": "Customers",
+        "field": "Customer",
+        "type": "many-to-one"
+      }
+    ],
+    "sampleDataSpec": {
+      "Customers": 85,
+      "Jobs": 250,
+      "Estimates": 35,
+      "Invoices": 150,
+      "Reviews": 47
+    }
+  },
+  "integrations": {
+    "airtable": {
+      "baseId": ""
+    },
+    "webhooks": {
+      "service_request_webhook": "",
+      "estimate_request_webhook": "",
+      "job_completion_webhook": "",
+      "overdue_invoice_webhook": "",
+      "review_webhook": ""
+    },
+    "email": {
+      "fromAddress": null
+    },
+    "claude": {
+      "enabled": false,
+      "model": "claude-sonnet-4-6"
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-04-01T00:00:00.000Z",
+    "updatedAt": "2026-04-01T00:00:00.000Z",
+    "createdBy": "system",
+    "tags": [
+      "trades",
+      "hvac",
+      "plumbing",
+      "field-service",
+      "reference"
+    ],
+    "notes": "Built-in reference template. Represents a typical 15-25 person HVAC/plumbing company. High demo value for trades and field service audiences.",
+    "isTemplate": true,
+    "lastSimulationDate": null
+  }
+}

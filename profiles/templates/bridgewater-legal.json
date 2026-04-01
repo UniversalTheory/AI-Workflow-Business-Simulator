@@ -1,0 +1,1140 @@
+{
+  "id": "tpl-bridgewater-legal",
+  "name": "Bridgewater Legal Group PLLC",
+  "industry": "Legal Services",
+  "profileType": "template",
+  "industryTemplate": null,
+  "description": "A 12-person law firm in downtown Grand Rapids specializing in real estate transactions, small business law, and estate planning. Founded in 2015 by partners Aisha Patel and David Kowalski, who left a larger firm to serve small businesses and families in the GR community. Revenue of approximately $1.9M annually. Well-regarded locally but struggling to scale because internal operations haven't kept pace with client growth.",
+  "location": {
+    "city": "Grand Rapids",
+    "state": "Michigan",
+    "zips": [
+      "49503",
+      "49504",
+      "49505",
+      "49506",
+      "49507",
+      "49508",
+      "49509",
+      "49512",
+      "49525",
+      "49534",
+      "49544",
+      "49546"
+    ],
+    "neighborhoods": [
+      "Downtown",
+      "Heritage Hill",
+      "East Hills",
+      "Eastown",
+      "Fulton Heights",
+      "Midtown"
+    ]
+  },
+  "size": {
+    "employeeCount": 12,
+    "annualRevenue": 1900000,
+    "locationCount": 1
+  },
+  "team": [
+    {
+      "name": "Aisha Patel",
+      "role": "Managing Partner",
+      "responsibilities": "Real estate and business law. Firm strategy. Reviews all significant documents. Perpetually overbooked.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "David Kowalski",
+      "role": "Partner",
+      "responsibilities": "Estate planning and probate. Manages his own caseload. Less involved in day-to-day operations.",
+      "isBottleneck": false,
+      "techComfort": 2,
+      "count": 1
+    },
+    {
+      "name": "Rachel Torres",
+      "role": "Associate Attorney",
+      "responsibilities": "2 years at the firm. Handles real estate closings and contract reviews. Spends hours drafting documents that follow the same patterns.",
+      "isBottleneck": false,
+      "techComfort": 4,
+      "count": 1
+    },
+    {
+      "name": "Marcus Webb",
+      "role": "Associate Attorney",
+      "responsibilities": "1 year at the firm. Estate planning and small business formation. Drafts many first versions of documents.",
+      "isBottleneck": false,
+      "techComfort": 4,
+      "count": 1
+    },
+    {
+      "name": "Kim Nguyen",
+      "role": "Senior Paralegal",
+      "responsibilities": "15 years experience. Manages case files, prepares document drafts, coordinates with title companies and courts. The operational backbone of the firm.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "Jason Li",
+      "role": "Paralegal",
+      "responsibilities": "3 years experience. Supports Marcus and David. Handles intake paperwork and initial document preparation.",
+      "isBottleneck": false,
+      "techComfort": 4,
+      "count": 1
+    },
+    {
+      "name": "Olivia Grant",
+      "role": "Legal Assistant / Receptionist",
+      "responsibilities": "Front desk, phones, scheduling, mail. Manages the new client intake process. First impression for every client.",
+      "isBottleneck": true,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "Tom Brennan",
+      "role": "Office Manager",
+      "responsibilities": "Billing via Clio, accounts receivable, vendor management, IT liaison. Wears many hats.",
+      "isBottleneck": false,
+      "techComfort": 3,
+      "count": 1
+    },
+    {
+      "name": "Legal Interns",
+      "role": "Part-time Legal Intern",
+      "responsibilities": "Law students from Cooley Law School. Research and basic document prep.",
+      "isBottleneck": false,
+      "techComfort": 5,
+      "count": 2
+    }
+  ],
+  "toolStack": [
+    {
+      "name": "Clio (Law Practice Management)",
+      "category": "CRM",
+      "usedBy": [
+        "Aisha Patel",
+        "David Kowalski",
+        "Rachel Torres",
+        "Marcus Webb",
+        "Kim Nguyen",
+        "Jason Li",
+        "Tom Brennan"
+      ],
+      "usage": "Case management, time tracking, billing. They use approximately 40% of its capabilities. Intake forms are basic.",
+      "painPoints": [
+        "Only 40% of features are actively used",
+        "Intake forms haven't been updated in 2+ years",
+        "No automation of routine tasks despite Clio supporting it",
+        "Time tracking is inconsistent \u2014 attorneys forget to log"
+      ],
+      "hasAiFeatures": true
+    },
+    {
+      "name": "Microsoft 365",
+      "category": "Document Management",
+      "usedBy": [
+        "Aisha Patel",
+        "David Kowalski",
+        "Rachel Torres",
+        "Marcus Webb",
+        "Kim Nguyen",
+        "Jason Li",
+        "Olivia Grant",
+        "Tom Brennan"
+      ],
+      "usage": "Word for all document drafting. Outlook for email. SharePoint for file storage \u2014 poorly organized with no consistent naming conventions.",
+      "painPoints": [
+        "SharePoint is poorly organized \u2014 files are hard to find",
+        "No document templates library \u2014 attorneys copy old documents",
+        "Find-and-replace errors (wrong client name left in) have reached clients",
+        "No version control on draft documents"
+      ],
+      "hasAiFeatures": true
+    },
+    {
+      "name": "DocuSign",
+      "category": "Document Management",
+      "usedBy": [
+        "Aisha Patel",
+        "Rachel Torres",
+        "Kim Nguyen"
+      ],
+      "usage": "E-signatures for closings and contracts. Works well in isolation but is not connected to Clio or document storage.",
+      "painPoints": [
+        "Disconnected from Clio \u2014 signed docs must be manually uploaded",
+        "No automated reminders to signers",
+        "Completed envelopes require manual filing in SharePoint"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Zoom",
+      "category": "Communication",
+      "usedBy": [
+        "Aisha Patel",
+        "David Kowalski",
+        "Rachel Torres",
+        "Marcus Webb"
+      ],
+      "usage": "Client meetings \u2014 about 30% are now virtual. No transcription or automated follow-up.",
+      "painPoints": [
+        "No meeting transcription or AI notes",
+        "Action items are captured informally or not at all",
+        "No automated follow-up email after client consultations"
+      ],
+      "hasAiFeatures": true
+    },
+    {
+      "name": "Paper Intake Forms",
+      "category": "Custom/Manual",
+      "usedBy": [
+        "Olivia Grant",
+        "Jason Li"
+      ],
+      "usage": "New clients fill out a paper form at the front desk. Olivia then types the information into Clio and Word templates.",
+      "painPoints": [
+        "Double data entry \u2014 paper to Clio to Word",
+        "Slow intake process loses potential clients",
+        "No digital intake option for remote or after-hours inquiries"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Excel",
+      "category": "Accounting",
+      "usedBy": [
+        "Tom Brennan"
+      ],
+      "usage": "Tracks accounts receivable, firm financials, and marketing spend. Manual data entry from Clio exports.",
+      "painPoints": [
+        "Manual export from Clio creates data lag",
+        "No real-time financial visibility",
+        "Prone to formula errors"
+      ],
+      "hasAiFeatures": false
+    },
+    {
+      "name": "Google Business Profile",
+      "category": "Marketing",
+      "usedBy": [
+        "Olivia Grant"
+      ],
+      "usage": "Occasionally responds to reviews. No systematic review generation strategy.",
+      "painPoints": [
+        "No system for soliciting reviews from satisfied clients",
+        "Negative reviews sometimes go unanswered for days",
+        "No tracking of review volume vs. competitors"
+      ],
+      "hasAiFeatures": false
+    }
+  ],
+  "workflows": [
+    {
+      "id": "client_intake",
+      "name": "New Client Intake",
+      "description": "The process from a prospective client's first contact to an active, properly set-up case in Clio.",
+      "currentProcess": "Potential client calls or emails \u2192 Olivia captures basic info on paper form \u2192 sends info to the relevant attorney via email \u2192 attorney decides whether to take the case (sometimes 2-3 days later) \u2192 if yes, Olivia types info into Clio and sends an engagement letter template \u2192 client comes in to sign and provide documents \u2192 Jason or Kim creates the case file.",
+      "painPoints": [
+        "7-10 days from first contact to active case",
+        "Slow response time loses prospective clients to competing firms",
+        "Paper-to-digital double entry wastes Olivia's time",
+        "No tracking of leads who don't convert",
+        "Attorneys can't quickly assess case viability before investing time"
+      ],
+      "estimatedTimePerWeek": 10,
+      "errorFrequency": "Medium",
+      "affectedTeamMembers": [
+        "Olivia Grant",
+        "Aisha Patel",
+        "David Kowalski",
+        "Jason Li",
+        "Kim Nguyen"
+      ],
+      "aiOpportunity": "AI could pre-screen inquiries for conflicts of interest, classify the matter type and urgency, draft a personalized acknowledgment email, create the case file in Clio, and notify the appropriate attorney with a structured summary \u2014 reducing intake time from days to hours.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "client_inquiry",
+        "consultation_scheduled"
+      ]
+    },
+    {
+      "id": "document_drafting",
+      "name": "Document Drafting",
+      "description": "The process of creating legal documents \u2014 purchase agreements, LLC articles, wills, leases \u2014 for client matters.",
+      "currentProcess": "Attorney or paralegal opens a previous similar document in Word \u2192 saves a new copy \u2192 manually finds and replaces client names, dates, property addresses, and other case-specific details \u2192 reviews for accuracy \u2192 sends to senior attorney for review.",
+      "painPoints": [
+        "Find-and-replace errors (wrong client names) have reached clients \u2014 embarrassing and potentially problematic",
+        "1-3 hours per document for routine drafts that follow standard patterns",
+        "Rachel and Marcus spend 60%+ of their time on drafting instead of higher-value work",
+        "No document template library \u2014 every attorney has their own approach",
+        "No version tracking on draft documents"
+      ],
+      "estimatedTimePerWeek": 25,
+      "errorFrequency": "High",
+      "affectedTeamMembers": [
+        "Rachel Torres",
+        "Marcus Webb",
+        "Kim Nguyen",
+        "Jason Li",
+        "Aisha Patel"
+      ],
+      "aiOpportunity": "AI could generate first drafts of routine documents from structured intake data, dramatically reducing drafting time and eliminating find-and-replace errors. Attorneys shift from drafters to reviewers.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "document_draft_needed"
+      ]
+    },
+    {
+      "id": "client_communication",
+      "name": "Client Communication & Status Updates",
+      "description": "Keeping clients informed about the status of their matter throughout the engagement.",
+      "currentProcess": "Clients email or call for status updates \u2192 Olivia takes a message or forwards the email \u2192 attorney responds when they get to it (sometimes days later) \u2192 no proactive updates go out.",
+      "painPoints": [
+        "Clients frequently feel left in the dark",
+        "Olivia fields 15-20 'where is my case?' calls per week \u2014 pure admin overhead",
+        "Attorneys spend significant time on status emails that could be standardized",
+        "No proactive notification system for milestones or next steps"
+      ],
+      "estimatedTimePerWeek": 8,
+      "errorFrequency": "Low",
+      "affectedTeamMembers": [
+        "Olivia Grant",
+        "Aisha Patel",
+        "Rachel Torres",
+        "Marcus Webb"
+      ],
+      "aiOpportunity": "AI could send proactive status update emails when case milestones are hit (document sent, signature received, closing scheduled), reducing inbound status calls by an estimated 60-70%.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "client_status_request"
+      ]
+    },
+    {
+      "id": "billing_collections",
+      "name": "Billing & Collections",
+      "description": "Monthly invoice generation, delivery, tracking, and collection follow-up.",
+      "currentProcess": "Attorneys log time in Clio (inconsistently). Tom generates invoices monthly \u2192 reviews with attorneys who add forgotten entries \u2192 sends invoices \u2192 manually tracks payments \u2192 sends overdue reminders via email.",
+      "painPoints": [
+        "Significant unbilled time \u2014 attorneys forget to log hours",
+        "Overdue accounts represent ~$180K at any given time",
+        "52-day average collection time (industry benchmark is 30-35 days)",
+        "Tom spends 2 full days per month on collections follow-up",
+        "No automated payment reminder sequence"
+      ],
+      "estimatedTimePerWeek": 6,
+      "errorFrequency": "Medium",
+      "affectedTeamMembers": [
+        "Tom Brennan",
+        "Aisha Patel",
+        "David Kowalski",
+        "Rachel Torres",
+        "Marcus Webb"
+      ],
+      "aiOpportunity": "AI could run an automated collections sequence (email reminders at 15, 30, 45 days), flag unbilled time for attorney review, and generate a weekly collections dashboard for Tom.",
+      "auditScore": null,
+      "linkedEventTypes": [
+        "invoice_due"
+      ]
+    }
+  ],
+  "eventTypes": [
+    {
+      "id": "client_inquiry",
+      "name": "New Client Inquiry",
+      "icon": "\u2696\ufe0f",
+      "category": "Customer-Facing",
+      "linkedWorkflow": "client_intake",
+      "fields": [
+        {
+          "key": "contact_name",
+          "label": "Contact Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "dataType": "phone",
+          "required": true,
+          "generator": "grPhone"
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "dataType": "email",
+          "required": true,
+          "generator": "bizEmail"
+        },
+        {
+          "key": "inquiry_type",
+          "label": "Matter Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Real Estate",
+            "Business Law",
+            "Estate Planning",
+            "Probate",
+            "Other"
+          ],
+          "distribution": {
+            "Real Estate": 40,
+            "Business Law": 30,
+            "Estate Planning": 20,
+            "Probate": 7,
+            "Other": 3
+          }
+        },
+        {
+          "key": "description",
+          "label": "Inquiry Description",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "inquiryDescriptions"
+        },
+        {
+          "key": "urgency",
+          "label": "Urgency",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Not Urgent",
+            "Within a Week",
+            "Urgent",
+            "Emergency"
+          ],
+          "distribution": {
+            "Not Urgent": 40,
+            "Within a Week": 35,
+            "Urgent": 20,
+            "Emergency": 5
+          }
+        },
+        {
+          "key": "referral_source",
+          "label": "Referral Source",
+          "dataType": "select",
+          "required": false,
+          "options": [
+            "Referral",
+            "Google",
+            "Website",
+            "Bar Association",
+            "Repeat Client",
+            "LinkedIn"
+          ],
+          "distribution": {
+            "Referral": 45,
+            "Google": 25,
+            "Website": 15,
+            "Bar Association": 5,
+            "Repeat Client": 8,
+            "LinkedIn": 2
+          }
+        }
+      ],
+      "contentPools": {
+        "inquiryDescriptions": [
+          "I'm buying a house on Wealthy St NE and my lender said I need an attorney for the closing. Looking for someone local.",
+          "My wife and I are selling our home in Eastown and the buyer's agent mentioned we should have an attorney review the purchase agreement.",
+          "I want to start an LLC for my photography business. I've been doing it as a sole proprietor for three years and need to get more serious about it.",
+          "My dad passed away last month without a will. I'm the only child. Not sure what I need to do to handle his estate.",
+          "I need to update my will \u2014 I have two kids now and my current will is from before they were born. Also want to set up a guardian designation.",
+          "I'm purchasing a commercial property on Division Ave and need help with due diligence and the purchase agreement.",
+          "My business partner and I are starting a craft brewery and we need an operating agreement for our LLC.",
+          "I received a cease and desist letter from another company claiming I'm using their trademarked name. Need legal advice fast.",
+          "I'm a landlord and I want to have a solid lease agreement drafted that protects me in Michigan. Currently using a template from the internet.",
+          "My mother's estate is going into probate and I need an attorney to guide me through the process. It's not a huge estate but there's a house and some savings.",
+          "I need a buy-sell agreement for my 50/50 business partnership. We've been putting it off and need to get it done.",
+          "I'm setting up a nonprofit organization for a youth baseball league in Grand Rapids and need help with the articles of incorporation.",
+          "I have a commercial lease for a space on Monroe Center and I want an attorney to review it before I sign.",
+          "I'm a 38-year-old single parent with two kids. I have no will, no POA, nothing. I know I need to get this done.",
+          "My business partner is trying to push me out of the company we co-founded. I need legal advice on my rights.",
+          "I just got married and I want to update all my estate documents \u2014 will, POA, healthcare directive \u2014 to reflect my new spouse.",
+          "I'm a small business owner and a former employee is threatening to sue me for wrongful termination. I need an attorney.",
+          "I want to do a 1031 exchange on a rental property. Need help with the legal side of the transaction.",
+          "My parents want to put their house in a trust to avoid probate. They're both in their 70s and want to get it done.",
+          "I need a shareholders' agreement for a small S-corp I'm forming with two other people. Three equal owners.",
+          "I'm going through a contentious estate dispute with my siblings over my late father's assets. Need representation.",
+          "I want to set up a revocable living trust and transfer my house and investment accounts into it.",
+          "I need a confidentiality agreement (NDA) for some contractors I'm bringing on to help develop a new product.",
+          "I'm purchasing a duplex as an investment property and want an attorney to review the purchase agreement and title.",
+          "My business has grown to the point where I should have proper legal documentation. Need articles of incorporation, bylaws, and an operating agreement.",
+          "I want to file for a trademark for my restaurant name before someone else does. Is that something your firm handles?",
+          "I received a notice from the probate court that I'm named as executor of my aunt's estate. I've never done this before.",
+          "I'm starting a dental practice and need help with the business entity formation and a lease review for my office space.",
+          "My commercial tenant hasn't paid rent in three months. I want to understand my options for eviction in Michigan.",
+          "I need a deed transfer for a property \u2014 I want to add my daughter to the deed before anything happens to me.",
+          "My employer offered me a severance agreement and I'd like an attorney to review it before I sign.",
+          "My elderly mother needs a durable power of attorney and we want to make sure it's done right. She's still fully competent.",
+          "I have an old partnership agreement from 2015 that no longer reflects how we actually operate. Needs to be updated.",
+          "I want to understand what a lady bird deed is and whether it makes sense for my situation. I own a home and have one adult child.",
+          "I'm getting a divorce and I own a small business. Wondering if I need a business attorney in addition to my divorce attorney.",
+          "A contractor I hired did shoddy work on my rental property and is now demanding full payment. I want to know my options.",
+          "I need to review and negotiate a franchise agreement. I'm looking at buying a franchise in the GR area.",
+          "My co-founder and I are splitting the company. We need legal help structuring the separation agreement and asset division.",
+          "I just inherited a property from my grandmother. There are two mortgages on it. I need help understanding what comes next.",
+          "I'm starting a home daycare and I want to make sure I'm properly structured from a liability standpoint. Maybe an LLC, not sure."
+        ]
+      },
+      "webhookKey": "client_inquiry_webhook",
+      "airtableTarget": {
+        "tableId": "tblClients",
+        "fieldMapping": {
+          "contact_name": "Name",
+          "phone": "Phone",
+          "email": "Email",
+          "inquiry_type": "Practice Area",
+          "description": "Notes",
+          "referral_source": "Source"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 2,
+          "max": 6
+        },
+        "timeRange": {
+          "earliest": "08:00",
+          "latest": "17:30"
+        },
+        "peakHours": [
+          9,
+          10,
+          14
+        ]
+      },
+      "automationDescription": "AI pre-screens for potential conflicts of interest, classifies the matter type and urgency, drafts a personalized acknowledgment email, and notifies the appropriate attorney with a structured intake summary."
+    },
+    {
+      "id": "document_draft_needed",
+      "name": "Document Draft Needed",
+      "icon": "\ud83d\udcc4",
+      "category": "Internal Operations",
+      "linkedWorkflow": "document_drafting",
+      "fields": [
+        {
+          "key": "matter_id",
+          "label": "Matter ID",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "document_type",
+          "label": "Document Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Purchase Agreement",
+            "LLC Articles",
+            "Operating Agreement",
+            "Last Will & Testament",
+            "Trust Agreement",
+            "Lease Agreement",
+            "Contract Review",
+            "Closing Disclosure"
+          ],
+          "distribution": {
+            "Purchase Agreement": 25,
+            "LLC Articles": 20,
+            "Operating Agreement": 15,
+            "Last Will & Testament": 15,
+            "Trust Agreement": 10,
+            "Lease Agreement": 8,
+            "Contract Review": 5,
+            "Closing Disclosure": 2
+          }
+        },
+        {
+          "key": "client_name",
+          "label": "Client Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "specific_instructions",
+          "label": "Specific Instructions",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "draftInstructions"
+        },
+        {
+          "key": "deadline",
+          "label": "Deadline",
+          "dataType": "date",
+          "required": true,
+          "generator": "dateNear"
+        },
+        {
+          "key": "assigned_attorney",
+          "label": "Assigned Attorney",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Aisha Patel",
+            "David Kowalski",
+            "Rachel Torres",
+            "Marcus Webb"
+          ],
+          "distribution": {
+            "Aisha Patel": 35,
+            "David Kowalski": 25,
+            "Rachel Torres": 25,
+            "Marcus Webb": 15
+          }
+        }
+      ],
+      "contentPools": {
+        "draftInstructions": [
+          "Standard LLC articles for single-member Michigan LLC. Owner is Marcus Thompson, registered agent is the firm. Purpose: photography and media services.",
+          "Purchase agreement for 2847 Lake Dr SE, Grand Rapids. Sale price $285,000. Buyers are first-time homeowners. Include standard inspection contingency, financing contingency, 30-day close.",
+          "Last will and testament for Janet Kowalski, married, two minor children (ages 6 and 9). Spouse is primary beneficiary. Sister is alternate. Local bank named as executor.",
+          "Operating agreement for two-member LLC. 50/50 ownership, Priya Sundaram and Daniel Fitch. Michigan LLC, restaurant operations. Add member buyout provisions.",
+          "Durable power of attorney for Howard and Barbara Niehaus. Both in their mid-70s. Each designates the other as agent, then their adult daughter as alternate.",
+          "Commercial purchase agreement for 418 Division Ave S, GR. Purchase price $640,000. Buyer is an investment LLC. 60-day due diligence period, financing contingency, seller representations standard.",
+          "Trust agreement \u2014 revocable living trust for Robert Alvarez, single, no children. Trust to pass to his two siblings equally. House at 614 Cherry St SE to be re-titled into trust.",
+          "Standard residential lease for single-family rental in Wyoming, MI. 12-month term. No pets, no smoking. Michigan standard lease language. Monthly rent $1,250.",
+          "Buy-sell agreement for three-person S-corp (Cascade Auto Repair Inc.). Equal ownership. Life insurance trigger, buyout formula based on trailing 3-year average revenue.",
+          "LLC articles of organization for two-member LLC \u2014 Marcus Webb and Diana Yuen as members. Purpose: real estate investment. Michigan registered agent: the firm.",
+          "Healthcare directive and patient advocate designation for Lucinda Park. Her daughter, Angela Park, named as patient advocate. Standard Michigan statutory form language.",
+          "Amendment to existing operating agreement for Bridgeview Consulting LLC \u2014 add new member (Terrence Holland, 25% interest) and adjust capital contributions accordingly.",
+          "Deed transfer \u2014 warranty deed conveying 7822 Kalamazoo Ave SE from Robert and Susan Weathers to Thomas Weathers (son). No consideration, gift transfer. Include standard Michigan deed language.",
+          "NDA \u2014 mutual non-disclosure agreement for two parties: Northfield Design Studio LLC and Cascade Development Co. Purpose: potential joint venture. 3-year term.",
+          "Articles of incorporation for 501(c)(3) nonprofit \u2014 West Michigan Youth Baseball Foundation. Incorporator is Jerome Williams. Standard nonprofit articles, include required IRS language.",
+          "Commercial lease review and redline \u2014 client is tenant, retail space at 112 Monroe Center NW. 3-year initial term, two 2-year options. Flag any unusual clauses.",
+          "Shareholders' agreement for Grand Valley Aesthetics PC. Three equal shareholders. Restrict transfer of shares, include right of first refusal, non-compete clause for departing physician.",
+          "Lady bird deed (enhanced life estate deed) for Dorothy Sanchez. Property at 903 Cambridge Ave SE. Life estate retained by Dorothy. Remainder to her son Carlos Sanchez.",
+          "Purchase agreement \u2014 vacant lot purchase, 7th Street NW, GR. Price $85,000. Buyer is a builder. No financing contingency. 15-day due diligence, cash close.",
+          "Severance agreement for departing employee \u2014 Westbrook Marketing LLC. Employee is Adam Greene. 6-week severance, mutual release of claims, standard ADEA waiver language, 21-day consideration period.",
+          "Trust amendment for existing Hendricks revocable trust \u2014 remove former spouse as successor trustee, add adult daughter Lauren Hendricks. Keep all other trust terms intact.",
+          "LLC conversion \u2014 convert existing sole proprietorship to single-member LLC. Client: Rosa Gutierrez dba Rose's Floral Design. Michigan articles, EIN application note, registered agent.",
+          "Operating agreement for new consulting LLC \u2014 Kowalski & Associates PLLC. Two members, 60/40 split. Governing law: Michigan. Dispute resolution: arbitration in Kent County.",
+          "Quitclaim deed \u2014 transferring interest in 2204 Hall St SE from James Overstreet to Overstreet Family Trust. No consideration. Include standard quitclaim language.",
+          "Demand letter \u2014 client Northfield Properties LLC claims $22,000 in unpaid invoices from general contractor. Request payment within 14 days before legal action.",
+          "Franchise agreement review \u2014 client is buyer of Orangetheory Fitness franchise. Flag any non-compete language, territory restrictions, renewal conditions, and exit provisions.",
+          "Will amendment (codicil) for existing Bridgewater client Thomas Kim \u2014 add specific bequest of 1997 Ford Mustang to nephew Derek Kim, no other changes.",
+          "Real estate closing disclosure for 1544 Fulton St E sale. Sale price $312,000. Standard closing cost breakdowns. Buyer and seller credits as per settlement sheet.",
+          "Residential purchase agreement \u2014 843 Giddings Ave SE, sale price $198,500. Buyers: newlyweds. Include inspection contingency, lead paint disclosure (pre-1978 home), 45-day close.",
+          "Non-compete agreement for departing sales manager \u2014 Greenfield Landscaping Inc. 18-month term, 50-mile radius, standard Michigan enforceability considerations."
+        ]
+      },
+      "webhookKey": "document_draft_webhook",
+      "airtableTarget": {
+        "tableId": "tblMatters",
+        "fieldMapping": {
+          "matter_id": "Matter ID",
+          "document_type": "Document Type",
+          "client_name": "Client",
+          "deadline": "Deadline",
+          "assigned_attorney": "Assigned Attorney"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 2,
+          "max": 5
+        },
+        "timeRange": {
+          "earliest": "08:30",
+          "latest": "17:00"
+        },
+        "peakHours": [
+          9,
+          14,
+          15
+        ]
+      },
+      "automationDescription": "AI generates a first draft of the document using client data from Clio, reducing drafting time from 1-3 hours to a 15-minute attorney review. Flags any unusual clauses or missing information."
+    },
+    {
+      "id": "client_status_request",
+      "name": "Client Status Update Request",
+      "icon": "\ud83d\udcde",
+      "category": "Customer-Facing",
+      "linkedWorkflow": "client_communication",
+      "fields": [
+        {
+          "key": "client_name",
+          "label": "Client Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "matter_id",
+          "label": "Matter ID",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "question_text",
+          "label": "Client's Question",
+          "dataType": "contentPool",
+          "required": true,
+          "contentPoolRef": "statusQuestions"
+        },
+        {
+          "key": "channel",
+          "label": "Contact Channel",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Email",
+            "Phone",
+            "Portal"
+          ],
+          "distribution": {
+            "Email": 55,
+            "Phone": 40,
+            "Portal": 5
+          }
+        },
+        {
+          "key": "days_since_contact",
+          "label": "Days Since Last Update",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 3,
+            "max": 30
+          }
+        }
+      ],
+      "contentPools": {
+        "statusQuestions": [
+          "Hi, this is a message for Rachel. I'm calling about our closing \u2014 can you let me know if the title search came back clean? We close in 10 days.",
+          "I sent documents over last Tuesday and I haven't heard anything. Can someone please confirm you received them and let me know what happens next?",
+          "This is a voicemail for Aisha. It's been three weeks since our consultation and I haven't received the LLC documents yet. Please call me back at your earliest convenience.",
+          "Hi \u2014 I just want to make sure everything is on track for our closing on the 15th. Nobody has reached out in about two weeks and I'm getting nervous.",
+          "I'm trying to reach Marcus about my will. I came in for a consultation last month, filled out all the paperwork. Is the draft ready?",
+          "Can someone email me an update on where my mother's probate matter stands? I haven't heard anything in 10 days and I have questions about the house.",
+          "Hi, this is David Chen calling. I need to know if my purchase agreement was accepted. My realtor isn't getting answers and neither am I.",
+          "I submitted my intake form online two weeks ago. No one has followed up. I'm starting to wonder if it went through.",
+          "This message is for Kim. I believe my operating agreement should be ready by now. I need it for a bank meeting next week.",
+          "I was told to expect a draft of my trust documents within a week. That was three weeks ago. Can someone please update me?",
+          "Hi, quick question \u2014 do you need anything else from me for the closing? I want to make sure I'm not holding things up. Thanks.",
+          "This is Michelle Torres. I called last Thursday and left a message and haven't heard back. I really need an update on my case.",
+          "I have a deadline on my lease signing. I need to know if the attorney has reviewed it yet. Please call me as soon as possible.",
+          "Can someone tell me what the status is on the deed transfer? I've called twice this week and haven't reached anyone.",
+          "Hey, just wanted to check in. My mom's documents were supposed to be mailed to her and she says she hasn't gotten them. Can you look into that?",
+          "I got a letter from the probate court and I don't know what it means. Can Marcus or someone please call me back today?",
+          "This is my third time calling this week. I'm not upset with anyone but I really need to know what's happening with my closing. Please call me.",
+          "I emailed a signed copy of my engagement letter three weeks ago. I haven't heard anything since. Is my matter open?",
+          "I had a consultation with David on January 8th. I haven't received an engagement letter or any documentation since then. Is there a next step?",
+          "Hi, I'm calling to confirm that the NDA we discussed was sent to the other party. My business meeting is on Wednesday.",
+          "I know you're busy but I have a board meeting in two days and I need to present the operating agreement. Please give me a quick status call.",
+          "Can you email me a copy of the documents we filed? My accountant is asking for them and I don't have a copy.",
+          "Hi, this is a quick email to check \u2014 I believe we're waiting on a title commitment from the title company. Has that come in yet?",
+          "I just want to make sure my healthcare directive was filed properly. I haven't received any confirmation and I'm traveling next week.",
+          "This message is for Olivia at the front desk. I dropped off signed documents last Thursday. Has the attorney reviewed them yet?",
+          "Is there anything else you need from me on the purchase? I've been ready to close for three weeks and I keep hearing \"we're waiting on the seller.\"",
+          "Hi \u2014 my name is Gary Ostrowski. I'm a new client. I haven't received my login for the client portal yet. Can you send that?",
+          "I received a bill last week but I have no idea what stage my matter is at. Can someone explain what was done and what comes next?",
+          "Quick question \u2014 when my LLC documents are ready, will you mail originals or just email PDFs? I want to make sure I'm physically filing correctly with the state.",
+          "I got an email saying I need to schedule a signing appointment. I've been trying to call for two days and keep getting voicemail. Please help.",
+          "I'm selling my rental property and I have a 1031 exchange with a tight deadline. I need to know if the paperwork is ready \u2014 we have 45 days.",
+          "Hi, this is a voicemail for whoever handles the Chase estate matter. The bank is asking for letters of authority and I don't know if they've been issued yet.",
+          "I heard from my realtor that there's a title issue on the property. Can an attorney please call me to explain what that means before I panic?",
+          "My operating agreement was supposed to be done before the end of the month. It's the 28th. Please advise.",
+          "Can someone confirm that the NDA I had drafted is legally enforceable in Michigan? I want to use it starting this week.",
+          "I'm a client of David Kowalski. He's been great but I haven't gotten a status update in three weeks. Is there a paralegal I can talk to?",
+          "I need an updated invoice \u2014 the one I received is missing time for the closing we did last month. Tom should have the records.",
+          "Is my will signed, notarized, and ready to pick up? I wasn't sure if I needed to come in or if you'd mail it.",
+          "Hi, just a quick email \u2014 we're now 14 days from our scheduled close and I'd like a written checklist of what still needs to happen.",
+          "I left a message for Rachel four days ago. I understand she's busy, but a five-minute callback would go a long way. Thank you."
+        ]
+      },
+      "webhookKey": "client_status_webhook",
+      "airtableTarget": {
+        "tableId": "tblClients",
+        "fieldMapping": {
+          "client_name": "Name",
+          "matter_id": "Matter ID",
+          "question_text": "Latest Inquiry",
+          "channel": "Contact Channel"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 3,
+          "max": 8
+        },
+        "timeRange": {
+          "earliest": "08:00",
+          "latest": "18:00"
+        },
+        "peakHours": [
+          9,
+          11,
+          14,
+          16
+        ]
+      },
+      "automationDescription": "AI retrieves the current case status from Clio, drafts a personalized status update email to the client, and logs the outreach in the case file \u2014 without requiring attorney time."
+    },
+    {
+      "id": "invoice_due",
+      "name": "Invoice Due / Overdue",
+      "icon": "\ud83d\udcbc",
+      "category": "Financial",
+      "linkedWorkflow": "billing_collections",
+      "fields": [
+        {
+          "key": "client_name",
+          "label": "Client Name",
+          "dataType": "text",
+          "required": true,
+          "generator": "fullName"
+        },
+        {
+          "key": "matter_id",
+          "label": "Matter ID",
+          "dataType": "text",
+          "required": true
+        },
+        {
+          "key": "amount",
+          "label": "Amount Due",
+          "dataType": "currency",
+          "required": true,
+          "range": {
+            "min": 500,
+            "max": 15000
+          }
+        },
+        {
+          "key": "billing_type",
+          "label": "Billing Type",
+          "dataType": "select",
+          "required": true,
+          "options": [
+            "Hourly",
+            "Flat Fee",
+            "Retainer Draw"
+          ],
+          "distribution": {
+            "Hourly": 60,
+            "Flat Fee": 30,
+            "Retainer Draw": 10
+          }
+        },
+        {
+          "key": "days_outstanding",
+          "label": "Days Outstanding",
+          "dataType": "number",
+          "required": true,
+          "range": {
+            "min": 15,
+            "max": 90
+          }
+        },
+        {
+          "key": "email",
+          "label": "Client Email",
+          "dataType": "email",
+          "required": true,
+          "generator": "bizEmail"
+        }
+      ],
+      "contentPools": {},
+      "webhookKey": "invoice_due_webhook",
+      "airtableTarget": {
+        "tableId": "tblInvoices",
+        "fieldMapping": {
+          "client_name": "Client",
+          "matter_id": "Matter",
+          "amount": "Amount",
+          "days_outstanding": "Days Outstanding"
+        }
+      },
+      "frequency": {
+        "perDay": {
+          "min": 1,
+          "max": 4
+        },
+        "timeRange": {
+          "earliest": "09:00",
+          "latest": "16:00"
+        },
+        "peakHours": [
+          10,
+          14
+        ]
+      },
+      "automationDescription": "AI generates an appropriately-toned collections email (friendly reminder at 15 days, firmer at 30, formal at 45+), logs the outreach in Clio, and escalates to Tom at 60+ days."
+    }
+  ],
+  "dataSchema": {
+    "tables": [
+      {
+        "name": "Clients",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "Auto Number",
+            "description": "BLG-001, etc."
+          },
+          {
+            "name": "Name",
+            "type": "Single Line Text",
+            "description": "Individual: 'Susan & Robert Kim'; Business: 'Maplewood Properties LLC'"
+          },
+          {
+            "name": "Type",
+            "type": "Single Select",
+            "options": [
+              "Individual",
+              "Business",
+              "Nonprofit"
+            ]
+          },
+          {
+            "name": "Practice Area",
+            "type": "Single Select",
+            "options": [
+              "Real Estate",
+              "Business Law",
+              "Estate Planning",
+              "Probate"
+            ]
+          },
+          {
+            "name": "Assigned Attorney",
+            "type": "Single Select",
+            "options": [
+              "Aisha Patel",
+              "David Kowalski",
+              "Rachel Torres",
+              "Marcus Webb"
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Lead",
+              "Active",
+              "On Hold",
+              "Closed - Complete",
+              "Closed - Lost"
+            ]
+          },
+          {
+            "name": "Intake Date",
+            "type": "Date"
+          },
+          {
+            "name": "Source",
+            "type": "Single Select",
+            "options": [
+              "Referral",
+              "Google",
+              "Website",
+              "Bar Association",
+              "Repeat Client"
+            ]
+          },
+          {
+            "name": "Email",
+            "type": "Email"
+          },
+          {
+            "name": "Phone",
+            "type": "Phone Number",
+            "description": "616-XXX-XXXX"
+          },
+          {
+            "name": "Address",
+            "type": "Single Line Text",
+            "description": "Grand Rapids area addresses"
+          },
+          {
+            "name": "Outstanding Balance",
+            "type": "Currency",
+            "description": "$0 to $12,000"
+          },
+          {
+            "name": "Total Billed",
+            "type": "Currency",
+            "description": "$500 to $45,000"
+          },
+          {
+            "name": "Notes",
+            "type": "Long Text"
+          }
+        ]
+      },
+      {
+        "name": "Matters",
+        "fields": [
+          {
+            "name": "Matter ID",
+            "type": "Auto Number"
+          },
+          {
+            "name": "Client",
+            "type": "Link to Clients"
+          },
+          {
+            "name": "Practice Area",
+            "type": "Single Select",
+            "options": [
+              "Real Estate",
+              "Business Law",
+              "Estate Planning",
+              "Probate"
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Open",
+              "Pending",
+              "Closing",
+              "Closed"
+            ]
+          },
+          {
+            "name": "Assigned Attorney",
+            "type": "Single Select"
+          },
+          {
+            "name": "Open Date",
+            "type": "Date"
+          },
+          {
+            "name": "Close Date",
+            "type": "Date"
+          },
+          {
+            "name": "Description",
+            "type": "Long Text"
+          }
+        ]
+      },
+      {
+        "name": "Invoices",
+        "fields": [
+          {
+            "name": "Invoice ID",
+            "type": "Auto Number"
+          },
+          {
+            "name": "Client",
+            "type": "Link to Clients"
+          },
+          {
+            "name": "Matter",
+            "type": "Link to Matters"
+          },
+          {
+            "name": "Amount",
+            "type": "Currency"
+          },
+          {
+            "name": "Billing Type",
+            "type": "Single Select",
+            "options": [
+              "Hourly",
+              "Flat Fee",
+              "Retainer Draw"
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "Single Select",
+            "options": [
+              "Draft",
+              "Sent",
+              "Overdue",
+              "Paid"
+            ]
+          },
+          {
+            "name": "Invoice Date",
+            "type": "Date"
+          },
+          {
+            "name": "Due Date",
+            "type": "Date"
+          },
+          {
+            "name": "Paid Date",
+            "type": "Date"
+          },
+          {
+            "name": "Days Outstanding",
+            "type": "Number"
+          },
+          {
+            "name": "Reminders Sent",
+            "type": "Number"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "from": "Matters",
+        "to": "Clients",
+        "field": "Client",
+        "type": "many-to-one"
+      },
+      {
+        "from": "Invoices",
+        "to": "Clients",
+        "field": "Client",
+        "type": "many-to-one"
+      },
+      {
+        "from": "Invoices",
+        "to": "Matters",
+        "field": "Matter",
+        "type": "many-to-one"
+      }
+    ],
+    "sampleDataSpec": {
+      "Clients": 120,
+      "Matters": 180,
+      "Invoices": 80
+    }
+  },
+  "integrations": {
+    "airtable": {
+      "baseId": ""
+    },
+    "webhooks": {
+      "client_inquiry_webhook": "",
+      "document_draft_webhook": "",
+      "client_status_webhook": "",
+      "invoice_due_webhook": ""
+    },
+    "email": {
+      "fromAddress": null
+    },
+    "claude": {
+      "enabled": false,
+      "model": "claude-sonnet-4-6"
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-04-01T00:00:00.000Z",
+    "updatedAt": "2026-04-01T00:00:00.000Z",
+    "createdBy": "system",
+    "tags": [
+      "professional-services",
+      "legal",
+      "law-firm",
+      "reference"
+    ],
+    "notes": "Built-in reference template. Represents a typical 10-20 person professional services firm. High demo value for legal, accounting, consulting, and other professional service audiences.",
+    "isTemplate": true,
+    "lastSimulationDate": null
+  }
+}
