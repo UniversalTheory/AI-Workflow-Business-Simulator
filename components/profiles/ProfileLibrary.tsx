@@ -20,6 +20,7 @@
  */
 
 import React, { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { ProfileSummary, CompanyProfile } from '@/types/profile';
 import ProfileCard from './ProfileCard';
 import ProfileDetailModal from './ProfileDetailModal';
@@ -50,6 +51,8 @@ const FILTER_TABS: { id: FilterTab; label: string }[] = [
 // ---------------------------------------------------------------------------
 
 export default function ProfileLibrary({ initialProfiles }: ProfileLibraryProps) {
+  const router = useRouter();
+
   // Local profile list — will be updated optimistically on actions
   const [profiles, setProfiles] = useState<ProfileSummary[]>(initialProfiles);
 
@@ -112,8 +115,13 @@ export default function ProfileLibrary({ initialProfiles }: ProfileLibraryProps)
   // Handlers
   // ---------------------------------------------------------------------------
 
+  /** Open the profile in the Simulator Dashboard */
+  function handleOpen(summary: ProfileSummary) {
+    router.push(`/simulator?id=${summary.id}&type=${summary.profileType}`);
+  }
+
   /** Open the full profile detail modal */
-  async function handleOpen(summary: ProfileSummary) {
+  async function handleViewDetails(summary: ProfileSummary) {
     setLoadingId(summary.id);
     try {
       const res = await fetch(`/api/profiles/${summary.id}?type=${summary.profileType}`);
@@ -383,6 +391,7 @@ export default function ProfileLibrary({ initialProfiles }: ProfileLibraryProps)
                   profile={profile}
                   index={i}
                   onOpen={handleOpen}
+                  onViewDetails={handleViewDetails}
                   onDuplicate={handleDuplicate}
                   onArchive={profile.profileType !== 'template' ? handleArchive : undefined}
                   onDelete={profile.profileType !== 'template' ? handleDelete : undefined}

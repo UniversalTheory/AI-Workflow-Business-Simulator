@@ -68,8 +68,10 @@ function formatDate(isoString: string | null): string {
 
 interface ProfileCardProps {
   profile: ProfileSummary;
-  /** Called when the user clicks "Open in Simulator" */
+  /** Called when the user clicks "Open →" — navigates to Simulator Dashboard */
   onOpen: (profile: ProfileSummary) => void;
+  /** Called when the user clicks the card body — opens the detail modal */
+  onViewDetails: (profile: ProfileSummary) => void;
   /** Called when the user clicks "Duplicate" */
   onDuplicate: (profile: ProfileSummary) => void;
   /** Called when the user clicks "Archive" (non-template profiles only) */
@@ -89,6 +91,7 @@ interface ProfileCardProps {
 export default function ProfileCard({
   profile,
   onOpen,
+  onViewDetails,
   onDuplicate,
   onArchive,
   onDelete,
@@ -101,6 +104,7 @@ export default function ProfileCard({
   return (
     <article
       className="animate-fade-in group relative flex flex-col rounded-xl overflow-hidden cursor-pointer"
+      onClick={() => onViewDetails(profile)}
       style={{
         background: 'var(--bg-card)',
         border: '1px solid var(--border-default)',
